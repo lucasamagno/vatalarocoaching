@@ -14,4 +14,7 @@ export default {
 </script>
 
 <style>
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
 </style>
