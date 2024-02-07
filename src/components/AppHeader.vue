@@ -21,6 +21,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  max-width: 1000px; 
 }
 .navbar-brand img {
   height: 50px; 

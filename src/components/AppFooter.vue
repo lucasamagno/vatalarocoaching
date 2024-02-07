@@ -1,7 +1,7 @@
 <template>
   <footer class="app-footer">
     <div class="container">
-      <p>© 2024 Vatalaro Coaching. All rights reserved.</p>
+      <p>© 2024 Vatalaro Coaching | All rights reserved.</p>
       <!-- You can add more content here such as links or social media icons -->
     </div>
   </footer>

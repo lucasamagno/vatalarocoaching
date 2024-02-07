@@ -18,9 +18,17 @@ export default {
 </script>
 
 <style>
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* You might also want to set the height to ensure it fills the full viewport height */
+  height: 100%;
+}
+
+
 #app {
-  margin: 0 auto;
-  max-width: 800px; 
+
 }
 
 
