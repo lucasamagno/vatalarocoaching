@@ -12,12 +12,19 @@
         </div>
         <div class="footer-info">
           <p>© 2024 Vatalaro Coaching | All rights reserved.</p>
-          <a href="https://www.linkedin.com/in/kaylavatalaro/" target="_blank">LinkedIn</a>
+          <!-- FontAwesome LinkedIn Icon -->
+          <a href="https://www.linkedin.com/in/kayla-vatalaro/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
         </div>
       </div>
     </div>
   </footer>
 </template>
+
+<script setup>
+// JavaScript logic can be added here if needed.
+</script>
 
 <style scoped>
 .app-footer {
@@ -48,14 +55,16 @@
   margin: 5px 0; /* Adjust vertical margin between paragraphs */
 }
 
-.footer-links .footer-link {
+.footer-link {
   text-decoration: none; /* Remove underline */
   color: #333; /* Use custom color */
 }
 
-.footer-links .footer-link:hover {
-  /* Optional: Add hover effect */
+.footer-link:hover,
+.footer-info a:hover {
+  /* Apply hover effect */
   opacity: 0.8;
+  transition: opacity 0.3s ease; /* Smooth transition for the hover effect */
 }
 
 .footer-info {
@@ -66,5 +75,10 @@
 
 .footer-info a {
   margin-top: 5px; /* Adjust spacing between links and rights reserved text */
+  color: inherit; /* Inherits the color from the parent element */
+}
+
+.footer-info a i {
+  font-size: 24px; /* Adjust icon size */
 }
 </style>

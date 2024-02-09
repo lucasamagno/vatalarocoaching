@@ -1,14 +1,10 @@
 <template>
   <div class="page-navigation">
-    <p><router-link v-if="$route.path !== '/about'" to="/about" class="nav-button" id="about-button">About</router-link></p>
+    <p v-if="$route.path !== '/about' && $route.path !== '/'"><router-link to="/about" class="nav-button" id="about-button">About</router-link></p>
     <p><router-link v-if="$route.path !== '/executive-coaching'" to="/executive-coaching" class="nav-button" id="executive-coaching-button">Executive Coaching</router-link></p>
     <p><router-link v-if="$route.path !== '/consulting'" to="/consulting" class="nav-button" id="consulting-button">Consulting</router-link></p>
   </div>
 </template>
-
-<script setup>
-// Script setup for composition API if needed later
-</script>
 
 <style scoped>
 .page-navigation {
@@ -24,27 +20,17 @@
   justify-content: center;
   align-items: center;
   color: #fff;
-  width: 200px;
-  height: 100px;
+  width: 450px; /* Adjusted width */
+  height: 200px; /* Adjusted height */
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 24px; /* Increased font size */
   transition: transform 0.3s;
+  background-color: rgba(236, 137, 62, 0.5); /* Apply orange tint to the background */
+  position: relative;
+  margin: 0 20px;
 }
 
 .nav-button:hover {
   transform: scale(1.05);
-}
-
-/* Add background images for each button here */
-#about-button {
-   background-image: url('/public/assets/images/pagenavigation/1.jpeg');
-}
-
-#executive-coaching-button {
-  background-image: url('/public/assets/images/pagenavigation/2.jpeg');
-}
-
-#consulting-button {
-  background-image: url('/public/assets/images/pagenavigation/3.jpeg');
 }
 </style>

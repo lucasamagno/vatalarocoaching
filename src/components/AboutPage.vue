@@ -11,14 +11,13 @@
         <p>Kayla brings a decade of executive & leadership experience spanning Talent & Diversity, GTM (Go-To-Market), and Social Impact at some of the world’s foremost organizations. Her career includes roles across diverse industries, from startups to multi-billion-dollar companies (often building from early-stage to post-IPO) in software, pharma, biotech, media, trading, and adtech. Kayla holds degrees and certifications in neuroscience, gender studies, business, sustainability, strength finding, and coaching. Her leadership approach has been recognized in publications like The Muse, Forbes, Marie Claire, and DigiDay. She was also honored as a 2022 Woman of the Year by Pledge 1% for International Women's Day, with a feature on NASDAQ.</p>
         <p>With a deep understanding of the challenges and opportunities faced by today's leaders, Kayla provides a holistic approach to empower them for success in the dynamic professional landscape.</p>
         <p>Kayla also provides pro bono strategy support to nonprofits and NGOs working to build a better world.</p>
+        <p>Visit Kayla on her LinkedIn <a href="https://www.linkedin.com/in/kayla-vatalaro/">here</a>.</p>
       </div>
     </div>
   </div>
-  <PageNavigation />
 </template>
 
 <script setup>
-import PageNavigation from './PageNavigation.vue'
 
 </script>
 
@@ -27,6 +26,7 @@ import PageNavigation from './PageNavigation.vue'
   text-align: center;
   max-width: 1100px;
   margin: auto;
+  margin-bottom: 50px;
   padding: 10px;
 }
 

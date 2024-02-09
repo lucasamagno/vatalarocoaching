@@ -1,5 +1,6 @@
 <template>
   <section class="experience-section">
+    <h2 class="experience-header">Experience</h2> <!-- Header added here -->
     <div class="companies">
       <div class="company-logo" v-for="logo in logos" :key="logo.name">
         <img :src="logo.imgSrc" :alt="logo.name" />
@@ -21,30 +22,40 @@ const logos = [
 .experience-section {
   display: flex;
   justify-content: center;
+  flex-direction: column; /* Changed to column for vertical stacking */
+  align-items: center; /* Ensure the header is centered */
   flex-wrap: wrap;
   padding: 20px;
 }
 
+.experience-header {
+  margin-bottom: 20px; /* Spacing between the header and the logos */
+  font-size: 24px; /* Adjust font size as needed */
+  text-align: center; /* Center the text */
+}
+
 .companies {
-  display: flex; /* Ensure logos are displayed side by side */
+  display: flex;
   justify-content: center;
-  align-items: center; /* Align logos vertically */
-  flex-wrap: wrap; /* Allow wrapping if needed */
-  width: 100%; /* Take up full container width */
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .company-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
-  flex: 1; /* Allows flexible sizing but can be replaced with flex-basis if specific size is needed */
-  min-width: 150px; /* Minimum width for each logo container */
-  max-width: 20%; /* Maximum width for each logo container */
+  margin: 20px;
+  flex-basis: 20%;
+  min-width: 150px;
+  height: 120px;
 }
 
 .company-logo img {
-  height: 100px; /* Set a fixed height for all logos */
-  width: auto; /* Maintain aspect ratio */
+  max-height: 60px;
+  max-width: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
 }
 </style>

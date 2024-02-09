@@ -54,16 +54,16 @@
   padding: 10px 15px;
 }
 
-/* Updated hover effect with light orange background */
+/* Updated hover effect with the specified lighter orange color */
 .navbar-end li a:hover {
   transform: scale(1.05);
-  background-color: #FFDAB9; /* Peach Puff; adjust for desired shade of light orange */
-  color: #505050; /* Adjust if needed */
+  background-color: #FFCC99; /* Even lighter shade of orange */
+  color: #505050; /* Darker text for better contrast */
 }
 
-/* Updated style for the active link with a slightly different shade of light orange */
+/* Updated style for the active link with a slightly darker shade of the specified orange */
 .router-link-exact-active {
-  background-color: #FFA07A; /* Light Salmon; adjust for desired contrast */
+  background-color: #F5AB63; /* The original orange color for active links */
   color: #333;
   border-radius: 20px;
   padding: 10px 15px;
@@ -72,7 +72,7 @@
 /* Adjusting the hover style to not apply for active link */
 .navbar-end li a:hover:not(.router-link-exact-active) {
   transform: scale(1.05);
-  background-color: #FFDAB9; /* Consistent with the hover effect */
+  background-color: #FFCC99; /* Consistent with the hover effect */
   color: #505050;
 }
 </style>

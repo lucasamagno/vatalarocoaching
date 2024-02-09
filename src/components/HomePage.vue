@@ -3,6 +3,7 @@ import HeroSection from '@/components/HeroSection.vue';
 import ExperienceSection from './ExperienceSection.vue'
 import PageNavigation from './PageNavigation.vue'
 import TestimonialsPage from './TestimonialsPage.vue';
+import LetsChat from './LetsChat.vue'
 
 </script>
 
@@ -12,6 +13,7 @@ import TestimonialsPage from './TestimonialsPage.vue';
     <ExperienceSection />
     <TestimonialsPage />
     <PageNavigation />
+    <LetsChat />
   </div>
 </template>
 

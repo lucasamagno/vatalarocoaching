@@ -9,11 +9,9 @@
       </a>
     </div>
   </div>
-  <PageNavigation />
 </template>
 
 <script setup> 
-import PageNavigation from './PageNavigation.vue'
 
 </script>
 

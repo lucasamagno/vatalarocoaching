@@ -1,11 +1,13 @@
 <template>
     <h1>Vatalaro Consulting</h1>
 
-    
-    <PageNavigation />
+    <WorkshopsAndTrainings />
+    <PeopleOperations />
+    <AreasWeHelp />
 </template>
 
 <script setup> 
-import PageNavigation from './PageNavigation.vue'
-
+import WorkshopsAndTrainings from './WorkshopsAndTrainings.vue'
+import PeopleOperations from './PeopleOperations.vue'
+import AreasWeHelp from './AreasWeHelp.vue'
 </script>
