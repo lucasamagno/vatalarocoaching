@@ -5,9 +5,9 @@
         <!-- Links to other pages -->
         <div class="footer-links">
           <p><router-link to="/" class="footer-link">Home</router-link></p>
-          <p><router-link to="/about" class="footer-link">About</router-link></p>
           <p><router-link to="/executive-coaching" class="footer-link">Executive Coaching</router-link></p>
           <p><router-link to="/consulting" class="footer-link">Consulting</router-link></p>
+          <p><router-link to="/about" class="footer-link">About</router-link></p>
           <p><router-link to="/contact" class="footer-link">Contact</router-link></p>
         </div>
         <div class="footer-info">

@@ -1,13 +1,14 @@
 <template>
-    <h1>Vatalaro Consulting</h1>
+    <ConsultingHero />
 
     <WorkshopsAndTrainings />
     <PeopleOperations />
-    <AreasWeHelp />
+    <LetsChat />
 </template>
 
 <script setup> 
 import WorkshopsAndTrainings from './WorkshopsAndTrainings.vue'
 import PeopleOperations from './PeopleOperations.vue'
-import AreasWeHelp from './AreasWeHelp.vue'
+import ConsultingHero from './ConsultingHero.vue'
+import LetsChat from './LetsChat.vue'
 </script>

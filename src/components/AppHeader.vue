@@ -2,15 +2,15 @@
   <nav class="navbar">
     <div class="navbar-brand">
       <a href="/">
-        VC
+        <img className="logo-img" src="/assets/logo.png">
       </a>
     </div>
     <div class="navbar-menu">
       <ul class="navbar-end">
         <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/about">About</router-link></li>
         <li><router-link to="/executive-coaching">Executive Coaching</router-link></li>
         <li><router-link to="/consulting">Consulting</router-link></li>
+        <li><router-link to="/about">About</router-link></li>
         <li><router-link to="/contact">Contact</router-link></li>
       </ul>
     </div>
@@ -74,6 +74,11 @@
   transform: scale(1.05);
   background-color: #FFCC99; /* Consistent with the hover effect */
   color: #505050;
+}
+
+.logo-img {
+  max-width: 3.5rem; /* Adjust the maximum width as needed */
+  height: auto; /* This maintains the aspect ratio */
 }
 </style>
 

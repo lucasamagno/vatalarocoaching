@@ -21,15 +21,42 @@
 </script>
 
 <style scoped>
-.workshops-training h1, .workshops-training h2 {
-  margin-bottom: 1rem;
+.workshops-training {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+}
+
+.workshops-training h1 {
+  margin-bottom: 2rem;
+  text-align: left;
+  font-size: 24px; /* Adjusted font size */
 }
 
 .workshops-training section {
+  padding: 15px;
   margin-bottom: 2rem;
+  border: 1px solid #e0e0e0; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  transition: all 0.3s ease-in-out;
+}
+
+.workshops-training section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+.workshops-training h2 {
+  margin-bottom: 1rem;
+  color: #007BFF; /* Fresh color for the headings */
+  font-size: 20px; /* Adjusted font size */
 }
 
 .workshops-training p {
+  margin-bottom: 1rem;
+  text-align: left; /* Ensure text aligns to the left */
   line-height: 1.6;
 }
 </style>
