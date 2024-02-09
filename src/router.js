@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomePage from '@/components/HomePage.vue'; // Adjust this import to your actual component
+import HomePage from '@/components/HomePage.vue';
 import AboutPage from '@/components/AboutPage.vue';
 import ContactPage from '@/components/ContactPage.vue';
 import ExecutiveCoaching from '@/components/ExecutiveCoaching.vue';
@@ -14,14 +14,12 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(process.env.BASE_URL), // Adjusted to include the base URL
   routes,
   scrollBehavior(to) {
-    // If the route has a hash, scroll to it
     if (to.hash) {
       return { el: to.hash };
     } else {
-      // Otherwise, scroll to the top of the page
       return { top: 0 };
     }
   },

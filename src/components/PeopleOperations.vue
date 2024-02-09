@@ -40,13 +40,12 @@ const areas = ref([
 ]);
 </script>
 
-/* Scoped styles within your Vue component */
 <style scoped>
 .people-operations-container {
   display: grid;
   grid-template-rows: auto 1fr;
   margin: 0 auto;
-  max-width: 75%; /* Centering and limiting width to 75% of the page */
+  max-width: 75%; /* Adjusting the overall component to take up 75% of the page width */
 }
 
 .top-section {
@@ -57,16 +56,20 @@ const areas = ref([
 
 .gradient-shape {
   flex-basis: 20%;
-  background: linear-gradient(to bottom right, #FF7E5F, #FEB47B); /* Gradient for the shape */
+  background: linear-gradient(to bottom right, #FF7E5F, #FEB47B);
 }
 
 .people-operations-content {
   flex-basis: 75%;
 }
 
+.areas-of-help {
+  grid-column: 1 / -1; /* Ensures the table spans the full width of its row */
+}
+
 .areas-of-help .areas-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 boxes per row */
+  grid-template-columns: repeat(5, 1fr); /* Ensuring exactly 5 boxes per row */
   gap: 20px;
 }
 
@@ -83,14 +86,8 @@ const areas = ref([
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-.people-operations-content h1 {
+.people-operations-content h1, .areas-of-help h2, .areas-of-help h3 {
   margin-bottom: 1rem;
-  color: black; /* Keeping the main title black */
-}
-
-.areas-of-help h2, .areas-of-help h3 {
-  margin-bottom: 1rem;
-  color: #FF7E5F; /* Orange color from the gradient, applied to headers */
 }
 
 .people-operations-content p {
@@ -98,4 +95,3 @@ const areas = ref([
   line-height: 1.6;
 }
 </style>
-
