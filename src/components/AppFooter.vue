@@ -1,8 +1,20 @@
 <template>
   <footer class="app-footer">
     <div class="container">
-      <p>© 2024 Vatalaro Coaching | All rights reserved.</p>
-      <!-- You can add more content here such as links or social media icons -->
+      <div class="footer-content">
+        <!-- Links to other pages -->
+        <div class="footer-links">
+          <p><router-link to="/" class="footer-link">Home</router-link></p>
+          <p><router-link to="/about" class="footer-link">About</router-link></p>
+          <p><router-link to="/executive-coaching" class="footer-link">Executive Coaching</router-link></p>
+          <p><router-link to="/consulting" class="footer-link">Consulting</router-link></p>
+          <p><router-link to="/contact" class="footer-link">Contact</router-link></p>
+        </div>
+        <div class="footer-info">
+          <p>© 2024 Vatalaro Coaching | All rights reserved.</p>
+          <a href="https://www.linkedin.com/in/kaylavatalaro/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
     </div>
   </footer>
 </template>
@@ -11,13 +23,48 @@
 .app-footer {
   text-align: center;
   padding: 20px 0;
-  background-color: #f5f5f5; 
-  color: #333; 
+  background-color: #f5f5f5;
+  color: #333;
 }
 
 .container {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column; /* Align links vertically */
+}
+
+.footer-links p {
+  margin: 5px 0; /* Adjust vertical margin between paragraphs */
+}
+
+.footer-links .footer-link {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Use custom color */
+}
+
+.footer-links .footer-link:hover {
+  /* Optional: Add hover effect */
+  opacity: 0.8;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-info a {
+  margin-top: 5px; /* Adjust spacing between links and rights reserved text */
 }
 </style>

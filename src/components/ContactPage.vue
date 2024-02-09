@@ -1,4 +1,37 @@
 <template>
-    <h3>Contact:</h3>
-    <div class="asana-embed-container"><link rel="stylesheet" href="https://form.asana.com/static/asana-form-embed-style.css"/><iframe class="asana-embed-iframe" height="533" width = "800" src="https://form.asana.com/?k=sCaIxNnJY_UyeR42D7YLCw&d=1201846958216343&embed=true"></iframe><div class="asana-embed-footer"><a rel="nofollow noopener" target="_blank" class="asana-embed-footer-link" href="https://asana.com/?utm_source=embedded_form"><span class="asana-embed-footer-text">Form powered by</span><div class="asana-embed-footer-logo" role="img" aria-label="Logo of Asana"></div></a></div></div>
+  <div class="asana-embed-container">
+    <div class="responsive-iframe-container">
+      <iframe class="asana-embed-iframe" src="https://form.asana.com/?k=sCaIxNnJY_UyeR42D7YLCw&d=1201846958216343&embed=true" frameborder="0"></iframe>
+    </div>
+    <div class="asana-embed-footer">
+      <a rel="nofollow noopener" target="_blank" class="asana-embed-footer-link" href="https://asana.com/?utm_source=embedded_form">
+        <div class="asana-embed-footer-logo" role="img" aria-label="Logo of Asana"></div>
+      </a>
+    </div>
+  </div>
+  <PageNavigation />
 </template>
+
+<script setup> 
+import PageNavigation from './PageNavigation.vue'
+
+</script>
+
+<style scoped>
+.responsive-iframe-container {
+  position: relative;
+  width: 100%;
+  padding-top: 180%; /* Increased to accommodate the form's height */
+}
+.asana-embed-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.asana-embed-container {
+  max-width: 800px; /* Adjust the max-width as needed */
+  margin: auto; /* Center the form container */
+}
+</style>

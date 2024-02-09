@@ -1,8 +1,7 @@
 <template>
   <section class="hero-section">
-    <h1>VATALARO LEADERSHIP COACHING</h1>
-    <p class="motto">Are you ready to step into your full potential?</p>
-    <p>My practice is dedicated to empowering leaders to excel in the corporate world while championing outcomes that bring about transformative change to their lives and society.</p>
+    <h1>VATALARO COACHING</h1>
+    <p class="motto">Executive Coaching and Consulting Services</p>
   </section>
 </template>
 
@@ -12,16 +11,21 @@
 
 <style scoped>
 .hero-section {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
   text-align: center;
   padding: 50px 20px;
-  background-color: #f0f0f0;
+  background-color: #f0f0f0; /* This will be overridden by the gradient */
   height: 50vh;
   background: linear-gradient(to top right, rgb(236, 137, 62), rgb(88, 177, 219));
+  margin: 0; /* Ensure there's no default margin */
 }
 
 .hero-section h1 {
   margin-bottom: 20px;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   color: #333;
 }
 

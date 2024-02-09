@@ -48,6 +48,6 @@ h3, h4 {
 
 p, li {
   font-family: 'Manrope', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 </style>

@@ -7,10 +7,11 @@
     </div>
     <div class="navbar-menu">
       <ul class="navbar-end">
+        <li><router-link to="/">Home</router-link></li>
         <li><router-link to="/about">About</router-link></li>
+        <li><router-link to="/executive-coaching">Executive Coaching</router-link></li>
+        <li><router-link to="/consulting">Consulting</router-link></li>
         <li><router-link to="/contact">Contact</router-link></li>
-        <li><router-link to="/individual-coaching">Individual Coaching</router-link></li>
-        <li><router-link to="/startup-coaching">Startup Coaching</router-link></li>
       </ul>
     </div>
   </nav>
@@ -22,16 +23,58 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  max-width: 1000px; 
+  max-width: 1000px;
+  height: 80px;
+  padding: 0 20px;
+  font-size: 18px;
 }
-.navbar-brand img {
-  height: 50px; 
+
+.navbar-brand a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 24px;
+  transition: color 0.3s ease;
 }
+
 .navbar-menu .navbar-end {
   list-style: none;
   display: flex;
 }
+
 .navbar-end li {
   margin-left: 20px;
 }
+
+.navbar-end li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
+/* Updated hover effect with light orange background */
+.navbar-end li a:hover {
+  transform: scale(1.05);
+  background-color: #FFDAB9; /* Peach Puff; adjust for desired shade of light orange */
+  color: #505050; /* Adjust if needed */
+}
+
+/* Updated style for the active link with a slightly different shade of light orange */
+.router-link-exact-active {
+  background-color: #FFA07A; /* Light Salmon; adjust for desired contrast */
+  color: #333;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
+/* Adjusting the hover style to not apply for active link */
+.navbar-end li a:hover:not(.router-link-exact-active) {
+  transform: scale(1.05);
+  background-color: #FFDAB9; /* Consistent with the hover effect */
+  color: #505050;
+}
 </style>
+
+
