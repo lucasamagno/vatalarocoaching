@@ -16,6 +16,15 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to) {
+    // If the route has a hash, scroll to it
+    if (to.hash) {
+      return { el: to.hash };
+    } else {
+      // Otherwise, scroll to the top of the page
+      return { top: 0 };
+    }
+  },
 });
 
 export default router;

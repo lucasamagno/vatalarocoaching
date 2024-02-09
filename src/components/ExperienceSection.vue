@@ -1,6 +1,6 @@
 <template>
   <section class="experience-section">
-    <h2 class="experience-header">Experience</h2> <!-- Header added here -->
+    <h3 class="experience-header">Experience</h3> <!-- Header added here -->
     <div class="companies">
       <div class="company-logo" v-for="logo in logos" :key="logo.name">
         <img :src="logo.imgSrc" :alt="logo.name" />

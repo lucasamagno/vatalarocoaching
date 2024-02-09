@@ -4,6 +4,7 @@ import ExperienceSection from './ExperienceSection.vue'
 import PageNavigation from './PageNavigation.vue'
 import TestimonialsPage from './TestimonialsPage.vue';
 import LetsChat from './LetsChat.vue'
+import AboutPage from './AboutPage.vue'
 
 </script>
 
@@ -11,6 +12,7 @@ import LetsChat from './LetsChat.vue'
   <div>
     <HeroSection />
     <ExperienceSection />
+    <AboutPage />
     <TestimonialsPage />
     <PageNavigation />
     <LetsChat />

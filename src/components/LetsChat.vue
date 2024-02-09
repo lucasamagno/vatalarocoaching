@@ -1,8 +1,8 @@
 <template>
   <section class="lets-chat">
-    <h2>Let's Chat</h2>
+    <h3>Let's Chat</h3>
     <p>Have questions or want to learn more? Get in touch with Kayla today!</p>
-    <router-link to="/contact" class="contact-button">Contact Kayla</router-link>
+    <p><router-link to="/contact" class="contact-button">Contact Kayla</router-link></p>
   </section>
 </template>
 
@@ -16,7 +16,7 @@
   margin: 50px auto;
 }
 
-.lets-chat h2 {
+.lets-chat h3 {
   font-size: 24px;
   margin-bottom: 20px;
 }
@@ -32,7 +32,7 @@
   font-weight: bold;
   text-decoration: none;
   color: #fff;
-  background-color: #007bff;
+  background-color: rgb(88, 177, 219);
   border: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;

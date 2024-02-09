@@ -25,7 +25,7 @@
   border-radius: 10px;
   font-size: 24px; /* Increased font size */
   transition: transform 0.3s;
-  background-color: rgba(236, 137, 62, 0.5); /* Apply orange tint to the background */
+  background-color: #F5AB63; /* Apply orange tint to the background */
   position: relative;
   margin: 0 20px;
 }
