@@ -2,17 +2,24 @@
   <footer class="app-footer">
     <div class="container">
       <div class="footer-content">
-        <!-- Links to other pages -->
+        <!-- Updated structure for links with two columns -->
         <div class="footer-links">
-          <p><router-link to="/" class="footer-link">Home</router-link></p>
-          <p><router-link to="/executive-coaching" class="footer-link">Executive Coaching</router-link></p>
-          <p><router-link to="/consulting" class="footer-link">Consulting</router-link></p>
-          <p><router-link to="/about" class="footer-link">About</router-link></p>
-          <p><router-link to="/contact" class="footer-link">Contact</router-link></p>
+          <!-- First column -->
+          <div class="footer-column">
+            <p><router-link to="/" class="footer-link">Home</router-link></p>
+            <p><router-link to="/about" class="footer-link">About</router-link></p>
+            <p><router-link to="/contact" class="footer-link">Contact</router-link></p>
+          </div>
+          <!-- Second column -->
+          <div class="footer-column">
+            <p><router-link to="/executive-coaching" class="footer-link">For Executives & Leaders</router-link></p>
+            <p><router-link to="/rising-professionals" class="footer-link">For Rising Stars & Professionals</router-link></p>
+            <p><router-link to="/for-teams" class="footer-link">For Teams</router-link></p>
+            <p><router-link to="/for-startups" class="footer-link">For Startups</router-link></p>
+          </div>
         </div>
         <div class="footer-info">
           <p>© 2024 Vatalaro Coaching | All rights reserved.</p>
-          <!-- FontAwesome LinkedIn Icon -->
           <a href="https://www.linkedin.com/in/kayla-vatalaro/" target="_blank" aria-label="LinkedIn">
             <i class="fab fa-linkedin"></i>
           </a>
@@ -21,10 +28,6 @@
     </div>
   </footer>
 </template>
-
-<script setup>
-// JavaScript logic can be added here if needed.
-</script>
 
 <style scoped>
 .app-footer {
@@ -48,7 +51,13 @@
 
 .footer-links {
   display: flex;
-  flex-direction: column; /* Align links vertically */
+  flex-direction: row; /* Align the columns horizontally */
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px; /* Add spacing between the columns */
 }
 
 .footer-links p {
@@ -62,7 +71,6 @@
 
 .footer-link:hover,
 .footer-info a:hover {
-  /* Apply hover effect */
   opacity: 0.8;
   transition: opacity 0.3s ease; /* Smooth transition for the hover effect */
 }
@@ -74,7 +82,7 @@
 }
 
 .footer-info a {
-  margin-top: 5px; /* Adjust spacing between links and rights reserved text */
+  margin-top: 5px;
   color: inherit; /* Inherits the color from the parent element */
 }
 

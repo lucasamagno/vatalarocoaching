@@ -3,14 +3,19 @@ import HomePage from '@/components/HomePage.vue';
 import AboutPage from '@/components/AboutPage.vue';
 import ContactPage from '@/components/ContactPage.vue';
 import ExecutiveCoaching from '@/components/ExecutiveCoaching.vue';
-import ConsultingPage from '@/components/ConsultingPage.vue';
+import ForTeamsPage from '@/components/ForTeamsPage.vue';
+import RisingStarsPage from '@/components/RisingStarsPage.vue'
+import StartupsPage from '@/components/StartupsPage.vue'
 
 const routes = [
   { path: '/', component: HomePage },
   { path: '/about', component: AboutPage },
   { path: '/contact', component: ContactPage },
   { path: '/executive-coaching', component: ExecutiveCoaching },
-  { path: '/consulting', component: ConsultingPage },
+  { path: '/for-teams', component: ForTeamsPage },
+  { path: '/rising-professionals', component: RisingStarsPage },
+  { path: '/startups', component: StartupsPage }
+  
 ];
 
 const router = createRouter({

@@ -1,46 +1,30 @@
 <template>
   <div class="areas-of-collaboration">
-    <h3>Some of the areas we can work together on:</h3>
+    <h3>Some areas we can explore together:</h3>
     <ul>
       <li>
         <span class="icon-placeholder">🌟</span>
         <strong>Self-Discovery:</strong> Embark on a journey of self-discovery to understand your unique strengths, values, and aspirations.
       </li>
       <li>
-        <span class="icon-placeholder">🤝</span>
-        <strong>Authentic Leadership:</strong> Embrace authenticity as a leader, fostering trust and connection with your team and colleagues.
-      </li>
-      <li>
-        <span class="icon-placeholder">🌈</span>
-        <strong>Diverse and Inclusive Leadership:</strong> Prioritize diversity and inclusion in your organization, fostering a culture of belonging.
-      </li>
-      <li>
-        <span class="icon-placeholder">🎯</span>
-        <strong>Goal Setting & Strategy Development:</strong> Craft clear objectives and goals, and then develop a strategic roadmap to realize them.
-      </li>
-      <li>
         <span class="icon-placeholder">🧭</span>
-        <strong>Corporate Navigation:</strong> Learn the art of navigating corporate landscapes effectively. Cultivate effective relationships with key stakeholders, colleagues, and mentors to enhance collaboration and support.
+        <strong>Corporate Navigation & Advocating for Yourself:</strong> Learn the art of navigating corporate landscapes effectively and explore strategies to enhance skills, build strong internal relationships, expand influence, and seize leadership opportunities within your organization to propel your career forward.
       </li>
       <li>
-        <span class="icon-placeholder">🔍</span>
-        <strong>Self-Reflection:</strong> Cultivate the habit of self-reflection to continuously improve your personal and professional effectiveness.
-      </li>
-      <li>
-        <span class="icon-placeholder">💖</span>
-        <strong>Personal Fulfillment & Purpose:</strong> Uncover your true sources of motivation and inspiration, and align your career accordingly.
+        <span class="icon-placeholder">🔄</span>
+        <strong>Career Transitions:</strong> From resume writing and networking to interview preparation and negotiation skills, embrace change with confidence and clarity as you step into your next chapter of professional growth and personal fulfillment.
       </li>
       <li>
         <span class="icon-placeholder">⏱️</span>
-        <strong>Time Management & Personal Effectiveness:</strong> Optimize your productivity and personal effectiveness to achieve your professional and personal goals.
+        <strong>Time Management & Boundaries:</strong> Optimize your productivity and personal effectiveness, which can include taking control of your time to establish healthy boundaries with work.
+      </li>
+      <li>
+        <span class="icon-placeholder">🤝</span>
+        <strong>Authentic Leadership:</strong> Embrace authenticity as a leader or rising star, fostering trust and connection with your team and colleagues.
       </li>
       <li>
         <span class="icon-placeholder">🗣️</span>
-        <strong>Finding Your Voice:</strong> Cultivate authentic self-expression and effective communication to enhance your leadership presence.
-      </li>
-      <li>
-        <span class="icon-placeholder">👥</span>
-        <strong>For Teams:</strong> Team excellence workshops, strengths assessments, positive intelligence building, conflict resolution, talent planning, employee relations, fostering inclusion, and manager enablement.
+        <strong>Finding Your Voice & Public Speaking:</strong> Discover the power of your voice and hone your public speaking skills to communicate with clarity and confidence and enhance your leadership presence.
       </li>
     </ul>
   </div>

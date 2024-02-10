@@ -1,6 +1,7 @@
 <template>
   <section class="custom-hero-section">
-    <h1 class="page-title">For Executives & Leaders</h1>
+    <h1 class="page-title">For Rising Stars & Professionals</h1>
+    <p>Take your career to the next level and land a job you love with a company that <em>inspires</em> you.</p>
   </section>
 </template>
 

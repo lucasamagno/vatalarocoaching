@@ -1,7 +1,9 @@
 <template>
   <section class="hero-section">
-    <h1>VATALARO COACHING</h1>
-    <p class="motto">Executive Coaching and Consulting Services</p>
+    <h1>VATALARO COACHING & CONSULTING</h1>
+    <p class="motto">Empowering leaders and teams to excel and drive transformative change</p>
+    <!-- Added Contact Button -->
+    <p><router-link to="/contact" class="contact-button">Learn how with a free discovery call</router-link></p>
   </section>
 </template>
 
@@ -12,15 +14,15 @@
 <style scoped>
 .hero-section {
   display: flex;
-  flex-direction: column; /* Stack children vertically */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 50px 20px;
-  background-color: #f0f0f0; /* This will be overridden by the gradient */
+  background-color: #f0f0f0;
   height: 50vh;
   background: linear-gradient(to top right, rgb(236, 137, 62), rgb(88, 177, 219));
-  margin: 0; /* Ensure there's no default margin */
+  margin: 0;
 }
 
 .hero-section h1 {
@@ -33,5 +35,24 @@
   font-size: 1.5rem;
   margin-bottom: 20px;
   font-style: italic;
+}
+
+/* Styling for the Contact Button, similar to the 'Let's Chat' component */
+.contact-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(88, 177, 219);
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer; /* Ensures the link looks clickable */
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
 }
 </style>

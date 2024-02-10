@@ -1,18 +1,24 @@
 <template>
   <div class="people-operations-container">
+    <!-- New First Principles Leadership Section -->
+    <div class="first-principles-leadership">
+      <h2>First Principles Leadership for Startups</h2>
+      <p>Startup leaders, this coaching approach is tailored to teach you the fundamentals of growing a business from 1 to 100 and beyond. Just as you iterate and scale your products, coaches guide you in refining foundational leadership skills. From mastering communication to strategic thinking, this tailored guidance empowers you to navigate every growth stage with clarity and confidence. Invest in your leadership journey today to pave the way for enduring success.</p>
+      <p><a href="#">Looking for 1:1 coaching? Learn more here.</a></p>
+      <p><a href="#">In need of critical People Operations support? Learn more here.</a></p>
+    </div>
     <!-- First Row: Content and Gradient Shape -->
     <div class="top-section">
       <div class="gradient-shape"></div>
       <div class="people-operations-content">
         <h1>On Demand & Full Service People Operations for Startups</h1>
-        <p><em><a href="https://medium.com/granify/why-your-startup-needs-people-operations-yes-even-you-d0d9f0b5538a">Why Every Startup Needs People Operations. Yes, Even You. [9 min read]</a></em></p>
         <p>Navigating the complexities of People Operations (or HR) can be daunting for startups, but there are common pitfalls that can easily be avoided, and are sometimes critical to a company's survival. I’ve teamed up with heavy hitting People Leaders who laid the groundwork at Airbnb, Facebook, LinkedIn, and Asana.</p>
-        <p>We provide critical people operations services that won’t break the bank. It's like having a team of in-house experts when you need them. We’ll start by conducting an honest assessment of your current state, and provide a few different solutions (we’ll never oversell you).</p>
+        <p>We provide critical people operations services that won’t break the bank. <strong>It's like having a team of in-house experts when you need them.</strong> We’ll start by conducting an honest assessment of your current state, and provide a few different solutions (we’ll never oversell you).</p>
       </div>
     </div>
     <!-- Second Row: Areas We Help Startups -->
     <div class="areas-of-help">
-      <h2>Areas We Help Startups</h2>
+      <h3 class="table-header">Areas We Help Startups</h3>
       <div class="areas-grid">
         <div class="area" v-for="(item, index) in areas" :key="index">
           <h3>{{ item.Header }}</h3>
@@ -27,16 +33,21 @@
 import { ref } from 'vue';
 
 const areas = ref([
-  { Header: "Role Design & Recruiting", Description: "Org planning, job descriptions, advertising, assessment, and landing the right hire" },
   { Header: "Employer Branding", Description: "A compelling employer brand that resonates with your mission and makes you a talent magnet" },
   { Header: "Onboarding", Description: "Ensure new hires know what they need to when they start, nurturing & integrating them into the team" },
+  { Header: "Recruiting & Executive Search", Description: "From sourcing to satisfaction, we find recruiting partners for the best hire" },
   { Header: "Admin-lite Performance Evaluation", Description: "High performance teams need to know how their performance is being measured" },
-  { Header: "Compensation & Equity Design", Description: "Giving flexibility as you scale" },
+  { Header: "Compensation Design & Benchmarking", Description: "Including models for performance grants, equity vesting, cash vs. equity ratios" },
   { Header: "Offboarding & Employee Exits", Description: "" },
-  { Header: "Employment Law & Risk Mitigation", Description: "" },
+  { Header: "Organizational Structure & Role Design", Description: "" },
   { Header: "Inclusion & Diversity Planning", Description: "" },
+  { Header: "Incentive Programs", Description: "" },
+  { Header: "Executive Compensation", Description: "" },
+  { Header: "Tooling & Systems", Description: "" },
+  { Header: "Employee Handbook & Workplace Policies", Description: "" },
+  { Header: "Employment Law & Risk Mitigation", Description: "" },
   { Header: "When to bring someone on full-time", Description: "" },
-  { Header: "and more", Description: "" }
+  { Header: "And more", Description: "" }
 ]);
 </script>
 
@@ -45,12 +56,10 @@ const areas = ref([
   display: grid;
   grid-template-rows: auto 1fr;
   margin: 0 auto;
-  max-width: 75%; /* Adjusting the overall component to take up 75% of the page width */
+  max-width: 75%;
 }
 
-.top-section {
-  display: flex;
-  justify-content: space-between;
+.first-principles-leadership, .top-section, .areas-of-help {
   margin-bottom: 20px;
 }
 
@@ -59,17 +68,13 @@ const areas = ref([
   background: linear-gradient(to bottom right, #FF7E5F, #FEB47B);
 }
 
-.people-operations-content {
+.people-operations-content, .first-principles-leadership {
   flex-basis: 75%;
-}
-
-.areas-of-help {
-  grid-column: 1 / -1; /* Ensures the table spans the full width of its row */
 }
 
 .areas-of-help .areas-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Ensuring exactly 5 boxes per row */
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 }
 
@@ -86,12 +91,17 @@ const areas = ref([
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-.people-operations-content h1, .areas-of-help h2, .areas-of-help h3 {
+h1, h2, h3 {
   margin-bottom: 1rem;
 }
 
-.people-operations-content p {
+p {
   margin-bottom: 1.5rem;
   line-height: 1.6;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: underline;
 }
 </style>

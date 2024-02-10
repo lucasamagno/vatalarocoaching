@@ -1,18 +1,25 @@
 <template>
   <div class="workshops-training">
     <h1>Workshops & Training for managers and teams</h1>
-    <section>
-      <h2>Nurturing Growth: Performance Management & Feedback Essentials</h2>
-      <p>Learn how to set clear expectations, provide constructive feedback, and have performance conversations to drive employee growth and impact.</p>
-    </section>
+    <!-- Sections -->
     <section>
       <h2>Fostering Inclusivity: A DEIB Training Workshop</h2>
-      <p>Delve into the nuanced world of diversity, equity, inclusion, and belonging (DEIB). We’ll explore unconscious bias, allyship, and the importance of inclusive hiring practices. If you have Employee Resource Groups, we can collaborate with them to add a dynamic, engaging, and impactful dimension to this training, showcasing from a personal lens why this work matters.</p>
+      <p>Delve into the nuanced world of diversity, equity, inclusion, and belonging (DEIB)...</p>
     </section>
     <section>
-      <h2>Demystifying Equity Compensation</h2>
-      <p>This workshop provides startup founders, People professionals, and employees with a comprehensive understanding of equity compensation packages. It includes candidate calculator and internal equity templates you can take back to your teams.</p>
+      <h2>Building Bridges: Strengthening Teams for Success</h2>
+      <p>Dive into the core elements of effective teamwork...</p>
     </section>
+    <section>
+      <h2>Leadership Synergy: Achieving Alignment for Executive Teams</h2>
+      <p>Designed specifically for leadership or executive teams...</p>
+    </section>
+    <section>
+      <h2>Putting Conflict to Rest: The Clearing Path from Story to Fact</h2>
+      <p>Explore a powerful conscious leadership tool to resolve workplace conflicts...</p>
+    </section>
+    <!-- Disclaimer -->
+    <p class="disclaimer">It is recommended that these be hosted in person, but many can also be held online.</p>
   </div>
 </template>
 
@@ -25,7 +32,7 @@
   display: flex;
   flex-direction: column;
   max-width: 800px;
-  margin: 0 auto; /* Center the container */
+  margin: 0 auto;
   padding: 20px;
 }
 
@@ -50,7 +57,7 @@
 
 .workshops-training h2 {
   margin-bottom: 1rem;
-  color: #007BFF; /* Fresh color for the headings */
+  color: #FEB47B; /* Fresh color for the headings */
   font-size: 20px; /* Adjusted font size */
 }
 
@@ -58,5 +65,11 @@
   margin-bottom: 1rem;
   text-align: left; /* Ensure text aligns to the left */
   line-height: 1.6;
+}
+
+.disclaimer {
+  font-style: italic; /* Italics for the disclaimer */
+  margin-top: 20px; /* Spacing above the disclaimer */
+  text-align: center; /* Center-align the disclaimer */
 }
 </style>
