@@ -3,8 +3,7 @@
     <h1 class="about-title">About</h1>
     <div class="split-section">
       <div class="left-side">
-        <!-- Assuming the path to your image is correct and accessible -->
-        <img src="/assets/images/IMG_1455.jpg" alt="Description of Image">
+        <!-- Background image will be set via CSS -->
       </div>
       <div class="right-side">
         <h3>Kayla Vatalaro</h3>
@@ -18,7 +17,7 @@
 </template>
 
 <script setup>
-
+// Script setup area remains as it is since no JavaScript logic is needed for this example.
 </script>
 
 <style scoped>
@@ -33,20 +32,24 @@
 .split-section {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Adjust this if you want to vertically center the content */
+  align-items: flex-start;
 }
 
 .left-side, .right-side {
   flex: 1;
 }
 
-.right-side {
-  text-align: left; /* Aligns the text content to the left */
+.left-side {
+  background-image: url('/public/assets/images/IMG_1455.jpg'); /* Reference to the image URL */
+  background-size: contain; /* Ensure the image covers the entire div */
+  background-repeat: no-repeat;
+  background-position: center; /* Center the image within the div */
+  height: 500px; /* Explicitly set a height for the div */
 }
 
-.left-side img {
-  width: 100%; /* Makes the image responsive */
-  height: auto; /* Maintains the aspect ratio */
-  max-width: 400px; /* Limits the size of the image */
+.right-side {
+  text-align: left; /* Align text content to the left */
+  padding: 0 20px; /* Optional padding for spacing */
 }
+
 </style>
