@@ -33,19 +33,22 @@ body {
 
 
 h1 {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 800px;
+  font-family: 'Merienda';
 }
 
 h2 {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 h3, h4 {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 p, li {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+
+.button-text {
+  font-family: 'Lato', sans-serif;
 }
 </style>

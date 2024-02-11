@@ -1,50 +1,77 @@
 <template>
   <div class="page-navigation">
-    <div class="nav-item">
-      <p><router-link to="/executive-coaching" class="nav-button">For Executives & Leaders</router-link></p>
-    </div>
-    <div class="nav-item">
-      <p><router-link to="/rising-professionals" class="nav-button">For Rising Stars & Professionals</router-link></p>
-    </div>
-    <div class="nav-item">
-      <p><router-link to="/for-teams" class="nav-button">For Teams</router-link></p>
-    </div>
-    <div class="nav-item">
-      <p><router-link to="/startups" class="nav-button">For Startups</router-link></p>
-    </div>
+    <router-link to="/executive-coaching" class="nav-item button-text" id="executive">For Executives & Leaders</router-link>
+    <router-link to="/rising-professionals" class="nav-item button-text" id="rising">For Rising Stars & Professionals</router-link>
+    <router-link to="/for-teams" class="nav-item button-text" id="teams">For Teams</router-link>
+    <router-link to="/startups" class="nav-item button-text" id="startups">For Startups</router-link>
   </div>
 </template>
 
 <style scoped>
 .page-navigation {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Creates a 2-column grid */
-  gap: 20px; /* Spacing between grid items */
-  max-width: 960px; /* Adjust based on your preference */
-  margin: auto; /* Center the grid in the page */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 .nav-item {
-  width: 100%; /* Ensure the container takes up all available space */
-}
-
-.nav-button {
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
-  width: 100%; /* Ensure button takes up all available space in .nav-item */
-  height: 150px; /* Adjusted height for uniformity */
-  font-size: 20px;
-  transition: transform 0.3s;
-  background-color: #2A9D8F; /* Match the background color from the Hero button */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  border-radius: 10px;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.nav-button:hover {
-  transform: scale(1.05);
-  background-color: #21867a;
+.nav-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: filter 0.3s ease, opacity 0.3s ease; /* Updated transition to include opacity */
+  z-index: -1;
+  opacity: 1; /* Full opacity by default */
+}
+
+.nav-item:hover::before {
+  filter: blur(8px); /* Blur effect */
+  opacity: 0.8; /* Slightly reduced opacity */
+}
+
+/* Assign background images to each nav item */
+#executive::before {
+  background-image: url('/public/assets/images/pagenavigation/1.jpg');
+}
+
+#rising::before {
+  background-image: url('/public/assets/images/pagenavigation/2.jpg');
+}
+
+#teams::before {
+  background-image: url('/public/assets/images/pagenavigation/3.jpg');
+}
+
+#startups::before {
+  background-image: url('/public/assets/images/pagenavigation/4.jpg');
+}
+
+/* Ensures text is visible and not affected by the ::before pseudo-element */
+.button-text {
+  z-index: 2; /* Higher than the ::before pseudo-element */
+  position: relative;
+  font-size: 3rem; /* Increased font size for better visibility */
 }
 </style>
+

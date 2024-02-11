@@ -2,7 +2,7 @@
   <nav class="navbar">
     <div class="navbar-brand">
       <a href="/">
-        <img class="logo-img" src="/assets/logo.png" alt="Logo">
+        <h1 className="logo-img">VC</h1>
       </a>
     </div>
     <div class="navbar-menu">
@@ -55,7 +55,8 @@ const closeDropdown = () => {
 }
 
 .logo-img {
-  max-height: 40px;
+  font-size: 35px;
+  color: black;
 }
 
 .navbar-menu .navbar-end {

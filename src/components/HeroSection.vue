@@ -2,9 +2,9 @@
   <section class="hero-section">
     <!-- Right side with text content -->
     <div class="hero-right">
-      <h1>KAYLA VATALARO COACHING & CONSULTING</h1>
+      <h1>VATALARO COACHING & CONSULTING</h1>
       <p class="motto">Empowering leaders and teams to excel and drive transformative change</p>
-      <p><router-link to="/contact" class="contact-button">Learn how with a free discovery call</router-link></p>
+      <p><router-link to="/contact" class="contact-button"><strong>Learn how with a free discovery call</strong></router-link></p>
     </div>
   </section>
 </template>

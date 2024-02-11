@@ -1,22 +1,22 @@
 <template>
   <div class="workshops-training">
-    <h1>Workshops & Training for managers and teams</h1>
+    <h2>Workshops & Training for managers and teams</h2>
     <!-- Sections -->
     <section>
-      <h2>Fostering Inclusivity: A DEIB Training Workshop</h2>
-      <p>Delve into the nuanced world of diversity, equity, inclusion, and belonging (DEIB)...</p>
+      <h3>Fostering Inclusivity: A DEIB Training Workshop</h3>
+      <p>Delve into the nuanced world of diversity, equity, inclusion, and belonging (DEIB).  We’ll explore unconscious bias, allyship, and the importance of inclusive hiring practices. If you have Employee Resource Groups, we can collaborate with them to add a dynamic, engaging, and impactful dimension to this training, showcasing from a personal lens  why this work matters.</p>
     </section>
     <section>
-      <h2>Building Bridges: Strengthening Teams for Success</h2>
-      <p>Dive into the core elements of effective teamwork...</p>
+      <h3>Building Bridges: Strengthening Teams for Success</h3>
+      <p>Dive into the core elements of effective teamwork.  From fostering trust and deeper connections to enhancing problem-solving skills, this workshop is tailored to elevate your team's collective purpose and create the foundation for  impactful collaboration.</p>
     </section>
     <section>
-      <h2>Leadership Synergy: Achieving Alignment for Executive Teams</h2>
-      <p>Designed specifically for leadership or executive teams...</p>
+      <h3>Leadership Synergy: Achieving Alignment for Executive Teams</h3>
+      <p>Designed specifically for leadership or executive teams, we’ll go beyond mere alignment, and focus on empowering each member to be their best selves and to collectively excel together.  </p>
     </section>
     <section>
-      <h2>Putting Conflict to Rest: The Clearing Path from Story to Fact</h2>
-      <p>Explore a powerful conscious leadership tool to resolve workplace conflicts...</p>
+      <h3>Putting Conflict to Rest: The Clearing Path from Story to Fact</h3>
+      <p>Explore a powerful conscious leadership tool to resolve workplace conflicts, focusing on the distinction between subjective stories and objective facts. This session offers tools for fostering authentic dialogue, enhancing empathy, and achieving lasting resolution. </p>
     </section>
     <!-- Disclaimer -->
     <p class="disclaimer">It is recommended that these be hosted in person, but many can also be held online.</p>
@@ -55,10 +55,9 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
 }
 
-.workshops-training h2, h1 {
+.workshops-training h2, h3 {
   margin-bottom: 1rem;
   color: #FEB47B; /* Fresh color for the headings */
-  font-size: 20px; /* Adjusted font size */
 }
 
 .workshops-training p {

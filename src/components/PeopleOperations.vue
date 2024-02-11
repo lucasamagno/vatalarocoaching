@@ -95,6 +95,10 @@ h1, h2, h3 {
   margin-bottom: 1rem;
 }
 
+h2, h3 {
+  color: #eb3535
+}
+
 p {
   margin-bottom: 1.5rem;
   line-height: 1.6;

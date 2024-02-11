@@ -11,7 +11,7 @@
 
 <style scoped>
 .diverse-teams {
-  border: 2px solid #F5AB63; /* Orange border */
+  border: 2px solid #a226db; /* Orange border */
   padding: 20px; /* Padding around the text */
   text-align: left; /* Text aligned to the left */
   margin: 20px; /* Margin around the component */
