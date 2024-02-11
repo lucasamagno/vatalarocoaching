@@ -7,18 +7,18 @@
     </div>
     <div class="navbar-menu">
       <ul class="navbar-end">
-        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/" class="nav-link">Home</router-link></li>
         <li class="dropdown" @mouseover="openDropdown" @mouseleave="closeDropdown">
-          <a href="javascript:void(0)">How I Can Help</a>
+          <a href="javascript:void(0)" class="nav-link">How I Can Help</a>
           <div class="dropdown-content" v-show="dropdownOpen">
-            <router-link to="/executive-coaching" @click="closeDropdown">For Executives & Leaders</router-link>
-            <router-link to="/rising-professionals" @click="closeDropdown">For Rising Stars & Professionals</router-link>
-            <router-link to="/for-teams" @click="closeDropdown">For Teams</router-link>
-            <router-link to="/startups" @click="closeDropdown">For Startups</router-link>
+            <router-link to="/executive-coaching" class="nav-link" @click="closeDropdown">For Executives & Leaders</router-link>
+            <router-link to="/rising-professionals" class="nav-link" @click="closeDropdown">For Rising Stars & Professionals</router-link>
+            <router-link to="/for-teams" class="nav-link" @click="closeDropdown">For Teams</router-link>
+            <router-link to="/startups" class="nav-link" @click="closeDropdown">For Startups</router-link>
           </div>
         </li>
-        <li><router-link to="/about">About</router-link></li>
-        <li><router-link to="/contact">Contact</router-link></li>
+        <li><router-link to="/about" class="nav-link">About</router-link></li>
+        <li><router-link to="/contact" class="nav-link">Contact</router-link></li>
       </ul>
     </div>
   </nav>
@@ -47,12 +47,11 @@ const closeDropdown = () => {
   max-width: 1000px;
   height: 80px;
   padding: 0 20px;
-  font-size: 18px;
+  background-color: #FFFFFF; /* White background */
 }
 
 .navbar-brand a {
   text-decoration: none;
-  color: inherit;
 }
 
 .logo-img {
@@ -69,24 +68,22 @@ const closeDropdown = () => {
   margin-left: 20px;
 }
 
-.navbar-end li a, .dropdown-content a {
+.nav-link {
   text-decoration: none;
-  color: inherit;
+  color: #333; /* Dark text color */
   padding: 10px 15px;
-  display: block;
-  transition: transform 0.3s ease, background-color 0.3s ease; /* Updated for scaling and highlighting */
+  border-radius: 10px; /* Added border radius */
+  transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease; /* Adjusted transition properties */
 }
 
-/* Updated hover effect for scaling and highlighting */
-.navbar-end li a:hover, .dropdown-content a:hover {
-  transform: scale(1.1); /* Scaling effect */
-  background-color: #FFCC99; /* Highlighting effect */
-  color: #505050; /* Ensuring text color contrasts well with the highlight */
+.nav-link:hover {
+  background-color: #2A9D8F; /* Green background color */
+  color: #FFF; /* White text color */
+  /* border-radius: 10px; */ /* Removed border-radius from hover state */
 }
 
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 
 .dropdown-content {
@@ -96,38 +93,17 @@ const closeDropdown = () => {
   min-width: 160px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
-  flex-direction: column;
+  border-radius: 10px; /* Added border radius */
 }
 
 .dropdown:hover .dropdown-content {
   display: flex;
+  flex-direction: column;
 }
 
 .router-link-exact-active {
-  background-color: #F5AB63;
-  color: #333;
-}
-
-.dropdown-content {
-  display: block; /* Changed from none to block */
-  visibility: hidden; /* Initially hidden */
-  opacity: 0; /* Start fully transparent */
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
-  flex-direction: column;
-  transition: visibility 0s, opacity 0.5s linear; /* Fade-in effect */
-}
-.dropdown:hover .dropdown-content {
-  visibility: visible; /* Make dropdown visible on hover */
-  opacity: 1; /* Fade to fully opaque */
-}
-
-.dropdown:hover > a {
-  transform: scale(1.1); /* Keep the scaling effect */
-  background-color: #FFCC99; /* Maintain the highlighting effect */
-  color: #505050; /* Ensuring text color contrasts well with the highlight */
+  background-color: #2A9D8F; /* Corrected green color */
+  color: #FFF; /* White text color */
+  border-radius: 10px; /* Added border radius */
 }
 </style>

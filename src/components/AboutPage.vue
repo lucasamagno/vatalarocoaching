@@ -30,12 +30,6 @@
   padding: 10px;
 }
 
-.about-title {
-  font-size: 2rem;
-  margin-top: 40px; /* Adjust this value as needed for top spacing */
-  margin-bottom: 40px; /* Adjust this value as needed for bottom spacing */
-}
-
 .split-section {
   display: flex;
   justify-content: space-between;

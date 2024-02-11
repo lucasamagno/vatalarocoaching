@@ -1,6 +1,7 @@
 <template>
   <section class="custom-hero-section">
     <h1 class="page-title">For Executives & Leaders</h1>
+    <p>Elevate your leadership potential and drive transformative change in your organization.</p>
   </section>
 </template>
 
@@ -15,9 +16,8 @@
   justify-content: center; /* Center content vertically */
   align-items: center; /* Center content horizontally */
   text-align: center;
-  padding: 30px 20px; /* Adjusted padding for a slightly smaller height */
-  /* Radial Gradient Background */
-  background: radial-gradient(circle at top left, rgb(236, 137, 62), rgb(88, 177, 219));
+  padding: 0 20px; /* Adjusted padding for a slightly smaller height */
+  padding-top: 15px;
   height: 30vh; /* Adjusted height to be slightly smaller */
   color: #333; /* Text color */
 }

@@ -55,7 +55,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
 }
 
-.workshops-training h2 {
+.workshops-training h2, h1 {
   margin-bottom: 1rem;
   color: #FEB47B; /* Fresh color for the headings */
   font-size: 20px; /* Adjusted font size */

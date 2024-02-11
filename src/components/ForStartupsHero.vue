@@ -1,6 +1,7 @@
 <template>
   <section class="custom-hero-section">
     <h1 class="page-title">For Startups</h1>
+    <p>Fuel your startup's success with expert People Partnership strategies, fostering a culture of innovation and growth.</p>
   </section>
 </template>
 
@@ -15,12 +16,11 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 30px 20px;
+  padding: 0px 20px;
+  padding-top: 15px;
   height: 30vh;
   color: #333;
-  /* Radial Gradient Background */
-  background: radial-gradient(circle at top left, rgb(236, 137, 62), rgb(88, 177, 219));
-}
+} 
 
 .custom-hero-section .page-title {
   margin-bottom: 15px;

@@ -1,9 +1,11 @@
 <template>
   <section class="hero-section">
-    <h1>VATALARO COACHING & CONSULTING</h1>
-    <p class="motto">Empowering leaders and teams to excel and drive transformative change</p>
-    <!-- Added Contact Button -->
-    <p><router-link to="/contact" class="contact-button">Learn how with a free discovery call</router-link></p>
+    <!-- Right side with text content -->
+    <div class="hero-right">
+      <h1>KAYLA VATALARO COACHING & CONSULTING</h1>
+      <p class="motto">Empowering leaders and teams to excel and drive transformative change</p>
+      <p><router-link to="/contact" class="contact-button">Learn how with a free discovery call</router-link></p>
+    </div>
   </section>
 </template>
 
@@ -14,45 +16,40 @@
 <style scoped>
 .hero-section {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #f0f0f0;
-  height: 50vh;
-  background: linear-gradient(to top right, rgb(236, 137, 62), rgb(88, 177, 219));
-  margin: 0;
+  justify-content: center; /* Center content horizontally */
+  padding: 0px 20px;
+  padding-top: 50px;
+  background-color: #FFFFFF; /* White background */
+  height: 40vh; /* Full viewport height */
 }
 
-.hero-section h1 {
-  margin-bottom: 20px;
-  font-size: 3.5rem;
-  color: #333;
+.hero-right {
+  text-align: center; /* Center text content */
 }
 
-.motto {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  font-style: italic;
+.hero-right h1 {
+  font-size: 3rem; /* Adjust font size */
+  font-weight: bold; /* Bold font weight */
+  color: #333; /* Dark text color */
 }
 
-/* Styling for the Contact Button, similar to the 'Let's Chat' component */
+.hero-right p {
+  font-size: 1.25rem; /* Adjust font size */
+  color: #666; /* Medium text color */
+}
+
 .contact-button {
   display: inline-block;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #fff;
-  background-color: rgb(88, 177, 219);
-  border: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  cursor: pointer; /* Ensures the link looks clickable */
+  padding: 10px 20px;
+  background-color: #2A9D8F; /* Button background color */
+  color: #FFF; /* Button text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 25px; /* Rounded button */
+  transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 .contact-button:hover {
-  background-color: #0056b3;
+  background-color: #21867a; /* Darker background color on hover */
 }
 </style>

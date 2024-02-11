@@ -1,6 +1,5 @@
 <template>
     <ForTeamsHero />
-
     <WorkshopsAndTrainings />
     <LetsChat />
 </template>

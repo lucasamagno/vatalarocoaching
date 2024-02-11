@@ -33,13 +33,12 @@ body {
 
 
 h1 {
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  font-size: 45px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800px;
 }
 
 h2 {
-  font-family: 'Lora', sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
 h3, h4 {
@@ -48,6 +47,5 @@ h3, h4 {
 
 p, li {
   font-family: 'Manrope', sans-serif;
-  font-size: 16px;
 }
 </style>

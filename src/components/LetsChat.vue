@@ -27,18 +27,18 @@
 
 .contact-button {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 10px 20px; /* Match the padding from the Hero button */
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
   color: #fff;
-  background-color: rgb(88, 177, 219);
+  background-color: #2A9D8F; /* Match the background color from the Hero button */
   border: none;
-  border-radius: 5px;
+  border-radius: 25px; /* Match the border radius from the Hero button */
   transition: background-color 0.3s ease;
 }
 
 .contact-button:hover {
-  background-color: #0056b3;
+  background-color: #21867a; /* Darker background color on hover */
 }
 </style>

@@ -1,6 +1,7 @@
 <template>
   <section class="custom-hero-section">
     <h1 class="page-title">For Teams</h1>
+    <p>Empower your team to achieve peak performance and foster a culture of collaboration and innovation.</p>
   </section>
 </template>
 
@@ -15,11 +16,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 30px 20px;
+  padding: 0px 20px;
+  padding-top: 15px;
   height: 30vh;
   color: #333;
-  /* Radial Gradient Background */
-  background: radial-gradient(circle at top left, rgb(236, 137, 62), rgb(88, 177, 219));
 }
 
 .custom-hero-section .page-title {
