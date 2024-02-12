@@ -1,17 +1,16 @@
 <template>
   <section class="hero-section">
-    <!-- Right side with text content -->
+    <!-- Adjusted Left side with an img tag for the portrait -->
+    <div class="hero-left">
+    </div>
+    <!-- Right side with text content remains unchanged -->
     <div class="hero-right">
-      <h1>VATALARO COACHING & CONSULTING</h1>
-      <p class="motto">Empowering leaders and teams to excel and drive transformative change</p>
+      <h1>Empowering leaders and teams to excel and drive <em>transformative</em> change</h1>
+      <p class="motto">Executive Coaching | Professional Development</p>
       <p><router-link to="/contact" class="contact-button"><strong>Learn how with a free discovery call</strong></router-link></p>
     </div>
   </section>
 </template>
-
-<script setup>
-// Script setup does not require exporting the default object explicitly
-</script>
 
 <style scoped>
 .hero-section {
@@ -19,13 +18,25 @@
   align-items: center;
   justify-content: center; /* Center content horizontally */
   padding: 0px 20px;
-  padding-top: 50px;
   background-color: #FFFFFF; /* White background */
-  height: 40vh; /* Full viewport height */
+  height: 70vh; /* Full viewport height */
+}
+
+.hero-left {
+  flex: 1; /* Divide the section equally */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  background-size: contain; /* Ensure the entire image is shown */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the background image */
+  background-image: url('/public/assets/images/IMG_1455.jpg'); /* Verify this path */
+  min-height: 500px; /* Example height to ensure visibility */  
 }
 
 .hero-right {
-  text-align: center; /* Center text content */
+  flex: 1; /* Divide the section equally */
+  text-align: left; /* Align text to the left */
 }
 
 .hero-right h1 {
@@ -42,14 +53,15 @@
 .contact-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #2A9D8F; /* Button background color */
+  background-color: #141726; /* Button background color */
   color: #FFF; /* Button text color */
   text-decoration: none; /* Remove underline */
   border-radius: 25px; /* Rounded button */
-  transition: background-color 0.3s ease; /* Smooth transition */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .contact-button:hover {
-  background-color: #21867a; /* Darker background color on hover */
+  background-color: #2b3152; /* Darker background color on hover */
 }
+
 </style>

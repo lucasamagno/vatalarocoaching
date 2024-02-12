@@ -1,7 +1,7 @@
 <template>
   <section class="custom-hero-section">
-    <h1 class="page-title">For Teams</h1>
-    <p>Empower your team to achieve peak performance and foster a culture of collaboration and innovation.</p>
+    <h1 class="page-title"><em>Is your team ready to unleash its full potential?</em></h1>
+    <p>Here are just a few examples of workshops and hands-on training designed to bring out the best in your team.  We’ll design a program that fits your goals and budget.</p>
   </section>
 </template>
 
@@ -17,8 +17,7 @@
   align-items: center;
   text-align: center;
   padding: 0px 20px;
-  padding-top: 15px;
-  height: 30vh;
+  height: 70vh;
   color: #333;
 }
 
@@ -39,5 +38,9 @@
   margin-bottom: 20px;
   max-width: 80%;
   color: inherit;
+}
+
+.page-title {
+  font-family: "Over the Rainbow", cursive;
 }
 </style>

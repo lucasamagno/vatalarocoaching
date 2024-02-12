@@ -1,6 +1,6 @@
 <template>
   <section class="custom-hero-section">
-    <h1 class="page-title">For Rising Stars & Professionals</h1>
+    <h1 class="page-title"><em>Are you ready to love your job?</em></h1>
     <p>Take your career to the next level and land a job you love with a company that <em>inspires</em> you.</p>
   </section>
 </template>
@@ -17,8 +17,7 @@
   align-items: center; /* Center content horizontally */
   text-align: center;
   padding: 0 20px; /* Adjusted padding for a slightly smaller height */
-  padding-top: 15px;
-  height: 30vh; /* Adjusted height to be slightly smaller */
+  height: 70vh; /* Adjusted height to be slightly smaller */
   color: #333; /* Text color */
 }
 
@@ -39,5 +38,9 @@
   margin-bottom: 20px; /* Adjusted spacing */
   max-width: 80%; /* Max width to control the text wrapping */
   color: inherit; /* Inherits the section's text color */
+}
+
+.page-title {
+  font-family: "Over the Rainbow", cursive;
 }
 </style>

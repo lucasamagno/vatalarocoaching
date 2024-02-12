@@ -33,7 +33,8 @@ body {
 
 
 h1 {
-  font-family: 'Merienda';
+  font-family: 'Fraunces';
+  font-weight: 100;
 }
 
 h2 {
@@ -49,6 +50,6 @@ p, li {
 }
 
 .button-text {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 </style>

@@ -2,7 +2,7 @@
   <nav class="navbar">
     <div class="navbar-brand">
       <a href="/">
-        <h1 className="logo-img">VC</h1>
+        <h1 className="logo-img">VC+C</h1>
       </a>
     </div>
     <div class="navbar-menu">
@@ -44,10 +44,10 @@ const closeDropdown = () => {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 100%;
   height: 80px;
   padding: 0 20px;
-  background-color: #FFFFFF; /* White background */
+  background-color: rgb(249,249,235);
 }
 
 .navbar-brand a {
@@ -78,7 +78,7 @@ const closeDropdown = () => {
 }
 
 .nav-link:hover {
-  background-color: #2A9D8F; /* Green background color */
+  background-color: #141726; /* Green background color */
   color: #FFF; /* White text color */
   /* border-radius: 10px; */ /* Removed border-radius from hover state */
 }
@@ -103,7 +103,7 @@ const closeDropdown = () => {
 }
 
 .router-link-exact-active {
-  background-color: #2A9D8F; /* Corrected green color */
+  background-color: #141726; /* Corrected green color */
   color: #FFF; /* White text color */
   border-radius: 10px; /* Added border radius */
 }

@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="footer-info">
-          <p>© 2024 Vatalaro Coaching | All rights reserved.</p>
+          <p>© 2024 Vatalaro Coaching & Consulting | All rights reserved.</p>
           <a href="https://www.linkedin.com/in/kayla-vatalaro/" target="_blank" aria-label="LinkedIn">
             <i class="fab fa-linkedin"></i>
           </a>

@@ -32,13 +32,13 @@
   font-weight: bold;
   text-decoration: none;
   color: #fff;
-  background-color: #2A9D8F; /* Match the background color from the Hero button */
+  background-color: #141726; /* Match the background color from the Hero button */
   border: none;
   border-radius: 25px; /* Match the border radius from the Hero button */
   transition: background-color 0.3s ease;
 }
 
 .contact-button:hover {
-  background-color: #21867a; /* Darker background color on hover */
+  background-color: #2b3152; /* Darker background color on hover */
 }
 </style>

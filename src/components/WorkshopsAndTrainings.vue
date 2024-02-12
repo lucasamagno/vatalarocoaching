@@ -12,7 +12,7 @@
     </section>
     <section>
       <h3>Leadership Synergy: Achieving Alignment for Executive Teams</h3>
-      <p>Designed specifically for leadership or executive teams, we’ll go beyond mere alignment, and focus on empowering each member to be their best selves and to collectively excel together.  </p>
+      <p> Designed specifically for leadership or executive teams, we’ll go beyond mere alignment, and focus on empowering each member to be their best selves and to collectively excel together.  Crafted with the heart of authentic connection in mind, this group coaching approach goes beyond traditional leadership training.  We'll dive deep into fostering genuine relationships, leveraging humor and vulnerability as tools cultivate an environment where trust, empathy, and shared purpose drive  unparalleled synergy.”</p>
     </section>
     <section>
       <h3>Putting Conflict to Rest: The Clearing Path from Story to Fact</h3>
@@ -57,7 +57,7 @@
 
 .workshops-training h2, h3 {
   margin-bottom: 1rem;
-  color: #FEB47B; /* Fresh color for the headings */
+  color: #141726; /* Fresh color for the headings */
 }
 
 .workshops-training p {

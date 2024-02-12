@@ -96,7 +96,7 @@ h1, h2, h3 {
 }
 
 h2, h3 {
-  color: #eb3535
+  color: #141726
 }
 
 p {
@@ -107,5 +107,9 @@ p {
 a {
   color: #007BFF;
   text-decoration: underline;
+}
+
+.area {
+  text-align: center;
 }
 </style>

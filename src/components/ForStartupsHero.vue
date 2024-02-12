@@ -17,8 +17,7 @@
   align-items: center;
   text-align: center;
   padding: 0px 20px;
-  padding-top: 15px;
-  height: 30vh;
+  height: 70vh;
   color: #333;
 } 
 
@@ -39,5 +38,9 @@
   margin-bottom: 20px;
   max-width: 80%;
   color: inherit;
+}
+
+.page-title {
+  font-family: "Over the Rainbow", cursive;
 }
 </style>

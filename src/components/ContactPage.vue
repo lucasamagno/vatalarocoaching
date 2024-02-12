@@ -2,9 +2,7 @@
   <div class="asana-embed-container">
     <!-- New content added above the form -->
     <div class="transformative-journey-intro">
-      <h3>Begin your transformative journey today:</h3>
-      <p>Your unique perspective and experiences are your greatest assets, and I am here to help you harness them.</p>
-      <p>For individuals, I offer a 30 minute complimentary discovery video call. For organizations and partnerships, reach out for more information. </p>
+      <h3>Begin your transformative journey today.</h3>
     </div>
     <div class="responsive-iframe-container">
       <iframe class="asana-embed-iframe" src="https://form.asana.com/?k=sCaIxNnJY_UyeR42D7YLCw&d=1201846958216343&embed=true" frameborder="0"></iframe>
