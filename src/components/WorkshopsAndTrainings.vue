@@ -1,6 +1,7 @@
 <template>
+<div className="tan-color">
   <div class="workshops-training">
-    <h2>Workshops & Training for managers and teams</h2>
+    <h2 className="content-title">Workshops & Training for managers and teams</h2>
     <!-- Sections -->
     <section>
       <h3>Fostering Inclusivity: A DEIB Training Workshop</h3>
@@ -21,6 +22,7 @@
     <!-- Disclaimer -->
     <p class="disclaimer">It is recommended that these be hosted in person, but many can also be held online.</p>
   </div>
+</div>
 </template>
 
 <script setup>
@@ -28,12 +30,20 @@
 </script>
 
 <style scoped>
+.content-title {
+  text-align: center;
+}
+
+.tan-color {
+  background-color: rgb(249,249,235);
+}
+
 .workshops-training {
   display: flex;
   flex-direction: column;
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 50px;
 }
 
 .workshops-training h1 {
@@ -48,6 +58,7 @@
   border: 1px solid #e0e0e0; /* Subtle border */
   border-radius: 8px; /* Rounded corners */
   transition: all 0.3s ease-in-out;
+  background-color: white;
 }
 
 .workshops-training section:hover {

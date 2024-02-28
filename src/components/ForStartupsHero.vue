@@ -1,7 +1,6 @@
 <template>
   <section class="custom-hero-section">
-    <h1 class="page-title">For Startups</h1>
-    <p>Fuel your startup's success with expert People Partnership strategies, fostering a culture of innovation and growth.</p>
+    <h1 class="page-title">Advisory and Consulting for Startups</h1>
   </section>
 </template>
 
@@ -17,14 +16,16 @@
   align-items: center;
   text-align: center;
   padding: 0px 20px;
-  height: 70vh;
-  color: #333;
+  height: 50vh;
+  color: white;
+  background: black;
 } 
 
 .custom-hero-section .page-title {
   margin-bottom: 15px;
   font-size: 2.5rem;
   color: inherit;
+  font-family: Lato;
 }
 
 .custom-hero-section h3 {
@@ -34,7 +35,7 @@
 }
 
 .custom-hero-section p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 20px;
   max-width: 80%;
   color: inherit;

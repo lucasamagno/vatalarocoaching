@@ -34,7 +34,7 @@
 }
 
 .custom-hero-section p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 20px;
   max-width: 80%;
   color: inherit;

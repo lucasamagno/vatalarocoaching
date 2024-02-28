@@ -22,7 +22,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  /* You might also want to set the height to ensure it fills the full viewport height */
   height: 100%;
 }
 
@@ -47,6 +46,7 @@ h3, h4 {
 
 p, li {
   font-family: 'Lato', sans-serif;
+  font-size: 18px;
 }
 
 .button-text {

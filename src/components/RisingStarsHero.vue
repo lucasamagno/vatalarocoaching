@@ -34,7 +34,7 @@
 }
 
 .custom-hero-section p {
-  font-size: 1.2rem; /* Adjusted font size for the paragraph */
+  font-size: 1.4rem; /* Adjusted font size for the paragraph */
   margin-bottom: 20px; /* Adjusted spacing */
   max-width: 80%; /* Max width to control the text wrapping */
   color: inherit; /* Inherits the section's text color */

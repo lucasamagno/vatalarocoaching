@@ -2,43 +2,29 @@
   <section class="lets-chat">
     <h3>Let's Chat</h3>
     <p>Have questions or want to learn more? Get in touch with Kayla today!</p>
-    <p><router-link to="/contact" class="contact-button">Contact Kayla</router-link></p>
+    <router-link to="/contact" class="contact-button">Contact Kayla</router-link>
   </section>
 </template>
-
-<script setup>
-// No script setup logic needed for this component
-</script>
 
 <style scoped>
 .lets-chat {
   text-align: center;
-  margin: 50px auto;
+  padding: 20px; /* Adjust padding for mobile */
+  margin: 30px auto; /* Reduce margin for mobile */
 }
 
 .lets-chat h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 20px; /* Reduce font size for mobile */
+  margin-bottom: 15px; /* Adjust spacing */
 }
 
 .lets-chat p {
-  margin-bottom: 30px;
+  font-size: 14px; /* Reduce font size for mobile */
+  margin-bottom: 20px; /* Adjust spacing */
 }
 
 .contact-button {
-  display: inline-block;
-  padding: 10px 20px; /* Match the padding from the Hero button */
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #fff;
-  background-color: #141726; /* Match the background color from the Hero button */
-  border: none;
-  border-radius: 25px; /* Match the border radius from the Hero button */
-  transition: background-color 0.3s ease;
-}
-
-.contact-button:hover {
-  background-color: #2b3152; /* Darker background color on hover */
+  padding: 8px 16px; /* Adjust padding for smaller screens */
+  font-size: 14px; /* Adjust font size for mobile */
 }
 </style>

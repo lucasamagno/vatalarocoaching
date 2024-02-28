@@ -1,24 +1,28 @@
 <template>
+<div className="tan-color">
   <div class="people-operations-container">
-    <!-- New First Principles Leadership Section -->
-    <div class="first-principles-leadership">
-      <h2>First Principles Leadership for Startups</h2>
-      <p>Startup leaders, this coaching approach is tailored to teach you the fundamentals of growing a business from 1 to 100 and beyond. Just as you iterate and scale your products, coaches guide you in refining foundational leadership skills. From mastering communication to strategic thinking, this tailored guidance empowers you to navigate every growth stage with clarity and confidence. Invest in your leadership journey today to pave the way for enduring success.</p>
-      <p>Looking for 1:1 coaching? Learn more <router-link to="/executive-coaching">here</router-link>.</p>
-      <p>In need of critical People Operations support? Learn more <router-link to="/for-teams">here</router-link>.</p>
-    </div>
-    <!-- First Row: Content and Gradient Shape -->
-    <div class="top-section">
-      <div class="gradient-shape"></div>
-      <div class="people-operations-content">
-        <h2>On Demand & Full Service People Operations for Startups</h2>
-        <p>Navigating the complexities of People Operations (or HR) can be daunting for startups, but there are common pitfalls that can easily be avoided, and are sometimes critical to a company's survival. I’ve teamed up with heavy hitting People Leaders who laid the groundwork at Airbnb, Facebook, LinkedIn, and Asana.</p>
-        <p>We provide critical people operations services that won’t break the bank. <strong>It's like having a team of in-house experts when you need them.</strong> We’ll start by conducting an honest assessment of your current state, and provide a few different solutions (we’ll never oversell you).</p>
+      <!-- New First Principles Leadership Section -->
+      <div class="first-principles-leadership">
+        <h2 className="content-title">First Principles Leadership for Startups</h2>
+        <p>Startup leaders, this coaching approach is tailored to teach you the fundamentals of growing a business from 1 to 100 and beyond. Just as you iterate and scale your products, coaches guide you in refining foundational leadership skills. From mastering communication to strategic thinking, this tailored guidance empowers you to navigate every growth stage with clarity and confidence. Invest in your leadership journey today to pave the way for enduring success.</p>
+        <div className="smaller">
+          <p>Looking for 1:1 coaching? Learn more <router-link to="/executive-coaching">here</router-link>.</p>
+          <p>In need of critical People Operations support? Learn more <router-link to="/for-teams">here</router-link>.</p>
+        </div>
+        <hr className="bar">
       </div>
-    </div>
+      <!-- First Row: Content and Gradient Shape -->
+      <div class="top-section">
+        <div class="gradient-shape"></div>
+        <div class="people-operations-content">
+          <h2 className="content-title" id="title2">On Demand & Full Service People Operations for Startups</h2>
+          <p>Navigating the complexities of People Operations (or HR) can be daunting for startups, but there are common pitfalls that can easily be avoided, and are sometimes critical to a company's survival. I’ve teamed up with heavy hitting People Leaders who laid the groundwork at Airbnb, Facebook, LinkedIn, and Asana.</p>
+          <p>We provide critical people operations services that won’t break the bank. <strong>It's like having a team of in-house experts when you need them.</strong> We’ll start by conducting an honest assessment of your current state, and provide a few different solutions (we’ll never oversell you).</p>
+        </div>
+      </div>
     <!-- Second Row: Areas We Help Startups -->
     <div class="areas-of-help">
-      <h2 class="table-header">Areas We Help Startups</h2>
+      <h2 class="table-header content-title">Areas We Help Startups</h2>
       <div class="areas-grid">
         <div class="area" v-for="(item, index) in areas" :key="index">
           <h3>{{ item.Header }}</h3>
@@ -27,6 +31,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script setup>
@@ -52,11 +57,31 @@ const areas = ref([
 </script>
 
 <style scoped>
+.smaller p{
+  font-size: 16px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.tan-color {
+  background-color: rgb(249,249,235);
+}
+
+.content-title {
+  text-align: center;
+}
+
 .people-operations-container {
   display: grid;
   grid-template-rows: auto 1fr;
   margin: 0 auto;
   max-width: 75%;
+  padding: 50px;
+}
+
+#title2 {
+  padding-top: 15px;
 }
 
 .first-principles-leadership, .top-section, .areas-of-help {
