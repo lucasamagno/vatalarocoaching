@@ -43,7 +43,7 @@
   transform: translateY(-2px);
 }
 
-@media (max-width: 390px) {
+@media (max-width: 430px) {
   .new-page-navigation {
     padding: 10px; /* Reduce padding for very small screens */
     grid-template-columns: 1fr; /* Single column layout */
@@ -53,6 +53,7 @@
     width: 100%; /* Full width to utilize available space */
     margin-bottom: 10px; /* Reduce margin for compact layout */
     font-size: 1.6rem; /* Adjust font size for smaller screens */
+    height: 6rem;
   }
 
   .new-nav-item:last-child {

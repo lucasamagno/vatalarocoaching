@@ -14,42 +14,81 @@
 <style scoped>
 .hero-section {
   display: flex;
-  flex-direction: column; /* Stack elements vertically for mobile */
+  flex-direction: row; /* Align side by side for desktop and tablets */
   align-items: center;
   justify-content: center;
   padding: 0 20px;
+  margin-top: 50px; /* Added margin at the top */
+  margin-bottom: 50px; /* Added margin at the bottom */
   background-color: #FFFFFF;
-  height: auto; /* Adjust height for mobile */
+}
+
+.hero-left, .hero-right {
+  flex: 1; /* Split the space evenly between the image and the content */
 }
 
 .hero-left {
-  width: 100%; /* Full width for mobile */
-  min-height: 300px; /* Adjusted height for mobile */
+  min-height: 500px; /* Increased height for better display */
   background-image: url('/public/assets/images/IMG_1455.jpg');
-  background-size: cover; /* Cover the entire div */
+  background-size: contain; /* Change to 'contain' to ensure the full image is visible */
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; /* Center the image */
 }
 
 .hero-right {
-  text-align: center; /* Center text for mobile */
-  padding: 20px; /* Add some padding */
+  text-align: left; /* Left-align text for desktop and tablet */
+  padding: 20px; /* Add some padding around the text */
 }
 
-.hero-right h1 {
-  font-size: 2rem; /* Smaller font size for mobile */
-}
-
-.hero-right p {
-  font-size: 1rem; /* Smaller font size for mobile */
-}
-
-.button-container {
-  padding: 0; /* Remove padding */
-  margin-top: 20px; /* Add some space above the button */
+.hero-right h1, .hero-right p, .button-container {
+  margin: 0 0 20px; /* Add bottom margin for spacing */
 }
 
 .contact-button {
-  font-size: 1rem; /* Adjust button font size for mobile */
+  padding: 10px 20px; /* Button padding */
+  background-color: #141726; /* Button color */
+  color: #FFF; /* Text color */
+  text-decoration: none; /* No underline */
+  border-radius: 25px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.contact-button:hover {
+  background-color: #2b3152; /* Darker color on hover */
+}
+
+/* Tablet layout (similar to desktop) */
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: row; /* Maintain side-by-side layout on tablets */
+  }
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column; /* Stack elements vertically on mobile */
+    margin-top: 20px; /* Adjusted margin for mobile */
+    margin-bottom: 20px; /* Adjusted margin for mobile */
+  }
+
+  .hero-left {
+    width: 100%; /* Full width for the image */
+    order: -1; /* Ensure image is above the text */
+    min-height: 400px; /* Increased height for a larger display on mobile */
+    background-size: cover; /* Keep to 'cover' for mobile to fill the container */
+    background-position: center; /* Center the image to focus on the main part */
+    margin-top: 20px; /* Added top margin for spacing between navbar and image */
+  }
+
+  .hero-right {
+    text-align: center; /* Center-align text for mobile */
+    padding: 20px; /* Ensure there's padding around the text for readability */
+  }
+
+  .hero-right h1, .hero-right p, .button-container {
+    margin: 20px 0; /* Adjust spacing for mobile layout */
+  }
 }
 </style>
+

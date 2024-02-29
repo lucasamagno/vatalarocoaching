@@ -13,23 +13,23 @@
       </div>
     </button>
     <div v-show="!isMobile" class="desktop-menu">
-      <router-link to="/" class="nav-link">Home</router-link>
-      <router-link to="/executive-coaching" class="nav-link">Executives & Leaders</router-link>
-      <router-link to="/rising-professionals" class="nav-link">Rising Stars & Professionals</router-link>
-      <router-link to="/for-teams" class="nav-link">Teams</router-link>
-      <router-link to="/startups" class="nav-link">Startups</router-link>
-      <router-link to="/about" class="nav-link">About</router-link>
-      <router-link to="/contact" class="nav-link">Contact</router-link>
+      <p><router-link to="/" class="nav-link">Home</router-link></p>
+      <p><router-link to="/executive-coaching" class="nav-link">Executives & Leaders</router-link></p>
+      <p><router-link to="/rising-professionals" class="nav-link">Rising Stars & Professionals</router-link></p>
+      <p><router-link to="/for-teams" class="nav-link">Teams</router-link></p>
+      <p><router-link to="/startups" class="nav-link">Startups</router-link></p>
+      <p><router-link to="/about" class="nav-link">About</router-link></p>
+      <p><router-link to="/contact" class="nav-link">Contact</router-link></p>
     </div>
     <transition name="fade">
       <div v-show="isMobileMenuVisible" class="full-page-menu" v-if="isMobile">
-        <router-link to="/" class="menu-item" @click="toggleMobileMenu">Home</router-link>
-        <router-link to="/executive-coaching" class="menu-item" @click="toggleMobileMenu">Executives & Leaders</router-link>
-        <router-link to="/rising-professionals" class="menu-item" @click="toggleMobileMenu">Rising Stars & Professionals</router-link>
-        <router-link to="/for-teams" class="menu-item" @click="toggleMobileMenu">Teams</router-link>
-        <router-link to="/startups" class="menu-item" @click="toggleMobileMenu">Startups</router-link>
-        <router-link to="/about" class="menu-item" @click="toggleMobileMenu">About</router-link>
-        <router-link to="/contact" class="menu-item" @click="toggleMobileMenu">Contact</router-link>
+        <p><router-link to="/" class="menu-item" @click="toggleMobileMenu">Home</router-link></p>
+        <p><router-link to="/executive-coaching" class="menu-item" @click="toggleMobileMenu">Executives & Leaders</router-link></p>
+        <p><router-link to="/rising-professionals" class="menu-item" @click="toggleMobileMenu">Rising Stars & Professionals</router-link></p>
+        <p><router-link to="/for-teams" class="menu-item" @click="toggleMobileMenu">Teams</router-link></p>
+        <p><router-link to="/startups" class="menu-item" @click="toggleMobileMenu">Startups</router-link></p>
+        <p><router-link to="/about" class="menu-item" @click="toggleMobileMenu">About</router-link></p>
+        <p><router-link to="/contact" class="menu-item" @click="toggleMobileMenu">Contact</router-link></p>
       </div>
     </transition>
   </nav>
@@ -97,9 +97,6 @@ watchEffect(() => {
 }
 
 .hamburger-button {
-  position: fixed;
-  top: 16px;
-  right: 16px;
   z-index: 100;
   background: none;
   border: none;
