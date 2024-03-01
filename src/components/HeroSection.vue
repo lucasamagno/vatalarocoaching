@@ -5,7 +5,7 @@
       <h1>Empowering leaders and teams to excel and drive <em>transformative</em> change</h1>
       <p class="motto">Executive Coaching | Professional Development | Consulting</p>
       <div class="button-container">
-        <router-link to="/contact" class="contact-button"><strong>Learn how with a free discovery call</strong></router-link>
+        <p><router-link to="/contact" class="contact-button"><strong>Learn how with a free discovery call</strong></router-link></p>
       </div>
     </div>
   </section>
@@ -45,12 +45,17 @@
 }
 
 .contact-button {
+  display: inline-block; /* Ensures button can grow in height */
   padding: 10px 20px; /* Button padding */
   background-color: #141726; /* Button color */
   color: #FFF; /* Text color */
   text-decoration: none; /* No underline */
   border-radius: 25px; /* Rounded corners */
   transition: background-color 0.3s ease; /* Smooth transition for hover */
+  white-space: normal; /* Allows text to wrap */
+  text-align: center; /* Centers the text inside the button */
+  min-width: 220px; /* Minimum width to prevent too narrow buttons */
+  box-sizing: border-box; /* Ensures padding is included in width calculation */
 }
 
 .contact-button:hover {
@@ -65,7 +70,7 @@
 }
 
 /* Mobile layout */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .hero-section {
     flex-direction: column; /* Stack elements vertically on mobile */
     margin-top: 20px; /* Adjusted margin for mobile */
@@ -88,6 +93,11 @@
 
   .hero-right h1, .hero-right p, .button-container {
     margin: 20px 0; /* Adjust spacing for mobile layout */
+  }
+
+  .contact-button {
+    width: auto; /* Allows button to expand based on content size */
+    padding: 15px 20px; /* Slightly larger padding for better touch target */
   }
 }
 </style>

@@ -39,7 +39,7 @@
 import { ref, watchEffect } from 'vue';
 
 const isMobileMenuVisible = ref(false);
-const isMobile = ref(window.innerWidth < 768);
+const isMobile = ref(window.innerWidth < 1025);
 
 const toggleMobileMenu = () => {
   isMobileMenuVisible.value = !isMobileMenuVisible.value;
@@ -52,7 +52,7 @@ const toggleMobileMenu = () => {
 
 watchEffect(() => {
   const handleResize = () => {
-    isMobile.value = window.innerWidth < 768;
+    isMobile.value = window.innerWidth < 1025;
     if (!isMobile.value) {
       isMobileMenuVisible.value = false;
     }
@@ -169,7 +169,7 @@ watchEffect(() => {
   color: #ccc;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .hamburger-button, .full-page-menu {
     display: none;
   }

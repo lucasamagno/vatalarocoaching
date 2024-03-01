@@ -14,7 +14,7 @@
   justify-items: center;
   align-items: center;
   background-color: rgb(249,249,235);
-  padding: 20px; /* Adjusted padding for better spacing */
+  padding: 20px;
   box-sizing: border-box;
   min-height: 70vh;
 }
@@ -23,15 +23,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%; /* Adjust width for better fit */
+  width: 90%;
   height: 10rem;
-  margin: 0 auto; /* Center align items */
-  padding: 15px 1%; /* Adjust padding to ensure it fits within the container */
+  margin: 0 auto;
+  padding: 15px 1%;
   text-decoration: none;
   color: #fff;
   background-color: #141726;
   text-align: center;
-  font-size: 1.8rem; /* Adjust font size for better readability */
+  font-size: 1.8rem;
   border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.354);
   transition: background-color 0.3s, transform 0.2s;
@@ -43,16 +43,32 @@
   transform: translateY(-2px);
 }
 
-@media (max-width: 430px) {
+@media (max-width: 1024px) and (min-width: 430px) {
+  /* Tablet view adjustments */
   .new-page-navigation {
-    padding: 10px; /* Reduce padding for very small screens */
-    grid-template-columns: 1fr; /* Single column layout */
+    grid-gap: 10px; /* Reduce space between rows */
+  }
+  
+  .new-nav-item {
+    margin-bottom: 10px; /* Adjust space between items if needed */
+  }
+
+  .new-page-navigation {
+    min-height: 30vh;
+  }
+}
+
+@media (max-width: 430px) {
+  /* Mobile view adjustments */
+  .new-page-navigation {
+    padding: 10px;
+    grid-template-columns: 1fr;
   }
 
   .new-nav-item {
-    width: 100%; /* Full width to utilize available space */
-    margin-bottom: 10px; /* Reduce margin for compact layout */
-    font-size: 1.6rem; /* Adjust font size for smaller screens */
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
     height: 6rem;
   }
 

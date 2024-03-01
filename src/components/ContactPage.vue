@@ -33,13 +33,14 @@
   height: 100%;
 }
 .asana-embed-container {
-  max-width: 800px; /* Adjust the max-width as needed */
+  max-width: 820px; /* Adjust the max-width as needed */
   margin: auto; /* Center the form container */
 }
 .transformative-journey-intro {
   margin-bottom: 20px; /* Space between the intro text and the form */
 }
-.transformative-journey-intro h2 {
+.transformative-journey-intro h3 {
   margin-bottom: 10px; /* Space between the title and the description */
+  text-align: center;
 }
 </style>

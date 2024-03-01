@@ -4,10 +4,6 @@
   </section>
 </template>
 
-<script setup>
-// No additional script setup needed for this example
-</script>
-
 <style scoped>
 .custom-hero-section {
   display: flex;
@@ -41,5 +37,21 @@
 
 .page-title {
   font-family: "Over the Rainbow", cursive;
+}
+
+/* Adjustments for Galaxy Fold and similarly small devices */
+@media (max-width: 280px) {
+  .custom-hero-section .page-title {
+    font-size: 1.8rem; /* Smaller font size for the title */
+  }
+
+  .custom-hero-section h3 {
+    font-size: 1.5rem; /* Smaller font size for the subtitle */
+  }
+
+  .custom-hero-section p {
+    font-size: 1rem; /* Smaller font size for paragraphs */
+    max-width: 90%; /* Allows text to take up more width */
+  }
 }
 </style>

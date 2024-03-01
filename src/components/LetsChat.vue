@@ -14,12 +14,12 @@
 }
 
 .lets-chat h3 {
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 15px;
 }
 
 .lets-chat p {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 

@@ -27,12 +27,6 @@
   color: inherit;
 }
 
-.custom-hero-section h3 {
-  margin-bottom: 10px;
-  font-size: 2rem;
-  color: inherit;
-}
-
 .custom-hero-section p {
   font-size: 1.4rem;
   margin-bottom: 20px;
@@ -42,5 +36,25 @@
 
 .page-title {
   font-family: "Over the Rainbow", cursive;
+}
+
+@media (max-width: 375px) and (min-width: 281px) {
+  .custom-hero-section p {
+    font-size: 1.2rem;
+  }
+
+    .custom-hero-section .page-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .custom-hero-section p {
+    font-size: 1rem;
+  }
+
+  .custom-hero-section .page-title {
+    font-size: 2rem;
+  }
 }
 </style>
