@@ -1,9 +1,7 @@
 <template>
   <nav class="navbar">
     <div class="navbar-brand">
-      <a href="/">
-        <h1 class="logo-img">VC+C</h1>
-      </a>
+      <router-link to="/"><h1 class="logo-img">VC+C</h1></router-link>
     </div>
     <button class="hamburger-button" @click="toggleMobileMenu" v-if="isMobile">
       <div class="hamburger-icon" :class="{ 'active': isMobileMenuVisible }">

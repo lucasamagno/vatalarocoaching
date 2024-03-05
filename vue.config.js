@@ -1,8 +1,6 @@
-const { defineConfig } = require('@vue/cli-service');
-
-module.exports = defineConfig({
-  transpileDependencies: true,
+module.exports = {
+  // Correctly configure the publicPath for GitHub Pages deployment
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/vatalarocoaching/'
-    : '/'
-});
+    ? '/vatalarocoaching/' // Use your GitHub repository name here
+    : '/',
+};
