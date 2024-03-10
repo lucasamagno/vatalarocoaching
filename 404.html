@@ -4,12 +4,9 @@
   <meta charset="utf-8">
   <title>Redirecting...</title>
   <script>
-    (function() {
-      // Takes the path and query string from the URL (excluding the domain)
-      var path = location.pathname + location.search;
-      // Redirects to the index.html with a hash (#) route
-      location.replace('');
-    }());
+    // Parses the current URL to get the path and redirects to the index.html with the path as a query string
+    var path = window.location.pathname;
+    document.location.href = '/index.html?path=' + path;
   </script>
 </head>
 <body>
