@@ -4,13 +4,15 @@
   <meta charset="utf-8">
   <title>Redirecting...</title>
   <script>
-    (function() {
-      // Takes the path and query string from the URL (excluding the domain)
-      var path = location.pathname + location.search;
-      // Redirects to the index.html with a hash (#) route
-      console.log("PATH:" + path)
-      location.replace(path);
-    }());
+    // Check if the URL contains a path
+    if (window.location.pathname !== '/') {
+      // Redirect to the homepage URL, but with the full path including the leading slash after a `#`
+      // Adjust "/your-repo-name/" to match your GitHub Pages base URL if your project is in a subdirectory
+      window.location.replace('/your-repo-name/#' + window.location.pathname + window.location.search);
+    } else {
+      // Directly redirect to the homepage for the root path
+      window.location.replace('/your-repo-name/');
+    }
   </script>
 </head>
 <body>
