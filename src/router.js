@@ -15,11 +15,10 @@ const routes = [
   { path: '/for-teams', component: ForTeamsPage },
   { path: '/rising-professionals', component: RisingStarsPage },
   { path: '/startups', component: StartupsPage }
-  
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL), // Adjusted to include the base URL
+  history: createWebHistory('/'), // Adjusted to include the base URL
   routes,
   scrollBehavior(to) {
     if (to.hash) {
