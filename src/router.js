@@ -14,7 +14,7 @@ const routes = [
   { path: '/executive-coaching', component: ExecutiveCoaching },
   { path: '/for-teams', component: ForTeamsPage },
   { path: '/rising-professionals', component: RisingStarsPage },
-  { path: '/startups', component: StartupsPage }
+  { path: '/startups', component: StartupsPage }  
 ];
 
 const router = createRouter({

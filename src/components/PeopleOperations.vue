@@ -115,17 +115,25 @@ const areas = ref([
   text-align: center;
 }
 
+/* For large screens where we can fit 5 items per row */
+@media (min-width: 1025px) {
+  .areas-of-help .areas-grid {
+    grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+  }
+}
+
+/* For medium screens where we switch to 2 items per row */
 @media (max-width: 1024px) {
-  /* Tablet styles */
   .people-operations-container {
     max-width: 90%;
     padding: 30px;
   }
   .areas-of-help .areas-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
   }
 }
 
+/* Adjustments for smaller screens remain unchanged */
 @media (max-width: 768px) {
   /* Mobile styles */
   .people-operations-container {
@@ -133,15 +141,7 @@ const areas = ref([
     padding: 20px;
   }
   .areas-of-help .areas-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Additional media queries for specific mobile dimensions */
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* Specific styles for tablets */
-  .areas-of-help .areas-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr; /* 1 item per row */
   }
 }
 </style>
