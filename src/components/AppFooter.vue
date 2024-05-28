@@ -11,7 +11,7 @@
         <router-link to="/startups" class="footer-link">For Startups</router-link>
       </div>
       <div class="footer-info">
-        <p className="rights">© 2024 Vatalaro Coaching & Consulting | All rights reserved.</p>
+        <p className="rights">© 2024 Vatalaro Coaching LLC | All rights reserved.</p>
         <a href="https://www.linkedin.com/in/kayla-vatalaro/" target="_blank" aria-label="LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
