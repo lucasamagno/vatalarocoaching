@@ -2,7 +2,7 @@
   <section class="hero-section">
     <div class="hero-left"></div>
     <div class="hero-right">
-      <h1>Empowering leaders and teams to excel and drive <em>transformative</em> change</h1>
+      <h1>Empowering leaders and teams to excel and drive <em>transformative</em> impact</h1>
       <p class="motto">Executive Coaching | Professional Development | Consulting</p>
       <div class="button-container">
         <p><router-link to="/contact" class="contact-button"><strong>Learn how with a free discovery call</strong></router-link></p>
