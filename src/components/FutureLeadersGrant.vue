@@ -95,7 +95,7 @@
       </div>
 
       <footer class="image-credits">
-        <p>Images: Hero by John Doe, About The Grant by Jane Smith, How You Can Support by Alex Johnson</p>
+        <p>Images: Hero by Kiana Bosman, About The Grant by Christopher Ruel, How You Can Support by Nathan Lemon</p>
       </footer>
 
     </div>
