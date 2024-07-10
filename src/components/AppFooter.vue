@@ -7,6 +7,7 @@
         <router-link to="/contact" class="footer-link">Contact</router-link> |
         <router-link to="/executive-coaching" class="footer-link">For Executives & Leaders</router-link> |
         <router-link to="/rising-professionals" class="footer-link">For Rising Stars & Professionals</router-link> |
+        <router-link to="/the-future-leaders-grant" class="footer-link">The Future Leaders Grant</router-link> |
         <router-link to="/for-teams" class="footer-link">For Teams</router-link> |
         <router-link to="/startups" class="footer-link">For Startups</router-link>
       </div>

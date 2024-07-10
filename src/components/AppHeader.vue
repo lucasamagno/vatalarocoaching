@@ -14,6 +14,7 @@
       <p><router-link to="/" class="nav-link">Home</router-link></p>
       <p><router-link to="/executive-coaching" class="nav-link">Executives & Leaders</router-link></p>
       <p><router-link to="/rising-professionals" class="nav-link">Rising Stars & Professionals</router-link></p>
+      <p><router-link to="/the-future-leaders-grant" class="nav-link">The Future Leaders Grant</router-link></p>
       <p><router-link to="/for-teams" class="nav-link">Teams</router-link></p>
       <p><router-link to="/startups" class="nav-link">Startups</router-link></p>
       <p><router-link to="/about" class="nav-link">About</router-link></p>
@@ -24,6 +25,7 @@
         <p><router-link to="/" class="menu-item" @click="toggleMobileMenu">Home</router-link></p>
         <p><router-link to="/executive-coaching" class="menu-item" @click="toggleMobileMenu">Executives & Leaders</router-link></p>
         <p><router-link to="/rising-professionals" class="menu-item" @click="toggleMobileMenu">Rising Stars & Professionals</router-link></p>
+        <p><router-link to="/the-future-leaders-grant" class="menu-item" @click="toggleMobileMenu">The Future Leaders Grant</router-link></p>
         <p><router-link to="/for-teams" class="menu-item" @click="toggleMobileMenu">Teams</router-link></p>
         <p><router-link to="/startups" class="menu-item" @click="toggleMobileMenu">Startups</router-link></p>
         <p><router-link to="/about" class="menu-item" @click="toggleMobileMenu">About</router-link></p>
