@@ -27,7 +27,7 @@
             <p>This initiative not only offers subsidized coaching to empower participants to advance their leadership skills, but it also aims to create ripple effects that benefit entire communities and future generations.</p>
             <p>Each coach is hand-selected and undergoes advanced DEIB (Diversity, Equity, Inclusion, and Belonging) training. Our coaches are passionate DEI advocates with a deep understanding of the unique challenges faced by underrepresented professionals. They bring empathy, cultural awareness, and a commitment to fostering an inclusive environment. With a proven track record of guiding individuals as they advance from entry-level jobs to expert-level careers, overcome imposter syndrome, and navigate complex cultural nuances, our esteemed coaches are particularly well-suited to support and empower our grant winners.</p>
             <p>By equipping underrepresented professionals with the tools to lead, we are not just changing the boardrooms; we are building better businesses and cultivating leaders who drive change and inspire others.</p>
-            <p>We will be opening applications for the Future Leaders Grant in the fall. If you identify as a woman, transgender, non-binary, or a person of color, we encourage you to check back in September for more information and to apply.</p>
+            <p id="applying-text"><strong>💡 Interested in applying?</strong> We will be opening applications for the Future Leaders Grant in the fall. If you identify as a woman, transgender, non-binary, or a person of color, we encourage you to check back in September for more information and to apply.</p>
           </div>
         </div>
       </section>
@@ -45,6 +45,9 @@
               <li><strong>$300 - The Empowerer:</strong> Your donation provides critical resources and support, equipping professionals with the skills and confidence needed to excel in their careers. You are creating opportunities for growth and development, making a significant impact on their path to leadership.</li>
               <li><strong>$1,800 or more - The Changemaker:</strong> This donation sponsors an individual for six months of personalized coaching, providing them with critical guidance and resources to thrive as leaders. Your support transforms lives and drives lasting change within organizations and communities. Your name will be prominently listed on all grant materials, publications, and our annual report, acknowledging your generous support (you can choose to opt out).</li>
             </ul>
+            <div class="cta-container" id="DonateToday">
+              <h2><a href="https://www.gofundme.com/f/help-build-a-more-diverse-leadership-landscape/donate?source=btn_donate" class="cta-button">Donate Today!</a></h2>
+            </div>
             <p>By supporting the Future Leaders Grant, you are investing in a brighter, more inclusive future. Your contribution helps break down barriers and creates opportunities for underrepresented leaders to rise and make a lasting impact.</p>
           </div>
           <div class="support-image"></div>
@@ -83,7 +86,7 @@
         
         <div class="quote quote-right">
           <p>Natalia H.</p>
-          <p>I didn't really know what coaching really was. I had heard of executive coaching but thought that was reserved for the Tim Cooks and Sheryl Sandbergs of the world. Two years ago, I never thought I'd work outside of retail, let alone in tech. I was introduced to a coach who gave me the support and guidance to break into the tech industry… it's transformed my life and financial future.</p>
+          <p>I didn't know what coaching really was. I had heard of executive coaching but thought that was reserved for the Tim Cooks and Sheryl Sandbergs of the world. Two years ago, I never thought I'd work outside of retail, let alone in tech. I was introduced to a coach who gave me the support and guidance to break into the tech industry… it's transformed my life and financial future.</p>
         </div>
       </section>
   
@@ -313,6 +316,14 @@ padding: 0 20px;
 .quote-left {
   text-align: left;
   margin-right: auto;
+}
+
+#applying-text {
+  font-size: 20px;
+}
+
+#DonateToday {
+  margin-bottom: 40px;
 }
 
 @media (max-width: 1024px) {
