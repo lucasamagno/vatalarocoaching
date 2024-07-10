@@ -93,6 +93,11 @@
       <div class="cta-container">
         <h2><a href="https://www.gofundme.com/f/help-build-a-more-diverse-leadership-landscape?attribution_id=sl:7f464948-f704-4f8f-8d09-2ea8b6771493&lang=en_US&utm_campaign=fp_sharesheet&utm_medium=customer&utm_source=copy_link" class="cta-button">Donate</a></h2>
       </div>
+
+      <footer class="image-credits">
+        <p>Images: Hero by John Doe, About The Grant by Jane Smith, How You Can Support by Alex Johnson</p>
+      </footer>
+
     </div>
   </template>
   
@@ -326,6 +331,14 @@ padding: 0 20px;
   margin-bottom: 40px;
 }
 
+.image-credits {
+  font-size: 0.5rem;
+  color: #aaa;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
 @media (max-width: 1024px) {
   .hero-content {
     flex-direction: column;
@@ -388,6 +401,10 @@ padding: 0 20px;
   .grants-page {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .image-credits {
+    font-size: 0.4rem;
   }
 
   .hero-text h2 {

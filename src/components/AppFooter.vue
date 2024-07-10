@@ -21,7 +21,6 @@
   </footer>
 </template>
 
-
 <style scoped>
 .app-footer {
   text-align: center;
