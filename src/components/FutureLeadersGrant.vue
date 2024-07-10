@@ -68,22 +68,22 @@
       <section class="testimonials">
         <div class="quote quote-left">
           <p>Jerrod H.</p>
-          <p>"You all have connected me to [a coach] who has incredible empathy. Her understanding of my work challenges has been instrumental in supporting my journey of driving community change and developing my mentorship abilities."</p>
+          <p>You all have connected me to [a coach] who has incredible empathy. Her understanding of my work challenges has been instrumental in supporting my journey of driving community change and developing my mentorship abilities.</p>
         </div>
   
         <div class="quote quote-right">
           <p>Annie (Ziwei) Z.</p>
-          <p>"Receiving the Future Leaders grant has been an emotional and powerful journey. The cultural understanding and nuance the coach brought to our sessions made all the difference, helping me navigate my career with newfound confidence and balance."</p>
+          <p>Receiving the Future Leaders grant has been an emotional and powerful journey. The cultural understanding and nuance the coach brought to our sessions made all the difference, helping me navigate my career with newfound confidence and balance.</p>
         </div>
        
         <div class="quote quote-left">
           <p>Yash A.</p>
-          <p>"The coaching I received through the [Future Leaders] grant was more than just professional development. It was a support system like I've never had before."</p>
+          <p>The coaching I received through the [Future Leaders] grant was more than just professional development. It was a support system like I've never had before.</p>
         </div>
         
         <div class="quote quote-right">
           <p>Natalia H.</p>
-          <p>"I didn't really know what coaching really was. I had heard of executive coaching but thought that was reserved for the Tim Cooks and Sheryl Sandbergs of the world. Two years ago, I never thought I'd work outside of retail, let alone in tech. I was introduced to a coach who gave me the support and guidance to break into the tech industry… it's transformed my life and financial future."</p>
+          <p>I didn't really know what coaching really was. I had heard of executive coaching but thought that was reserved for the Tim Cooks and Sheryl Sandbergs of the world. Two years ago, I never thought I'd work outside of retail, let alone in tech. I was introduced to a coach who gave me the support and guidance to break into the tech industry… it's transformed my life and financial future.</p>
         </div>
       </section>
   
@@ -145,13 +145,14 @@
   }
   
   .hero-image {
-    flex: 1;
-    background-image: url('/public/assets/images/TheFutureLeadersGrant/AboutTheGrant.jpg');
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: contain;
-    height: 100%;
-  }
+  flex: 1;
+  background-image: url('/public/assets/images/TheFutureLeadersGrant/AboutTheGrant.jpg');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: contain;
+  height: 100%;
+  position: relative;
+}
   
   .cta-container {
     display: flex;
@@ -197,7 +198,7 @@
     font-size: 2rem;
     color: #141726;
     margin-bottom: 20px;
-    text-align: right;
+    text-align: center;
   }
   
   .about-text p {
@@ -205,6 +206,7 @@
     line-height: 1.6;
     color: #333;
     margin-bottom: 15px;
+    text-align: justify;
   }
   
   .how-you-can-support {
@@ -220,11 +222,12 @@
   
   .support-content {
     display: flex;
-    align-items: center; /* Changed from flex-start to center */
-    position: relative; /* Added to allow absolute positioning of child */
+    align-items: center; 
+    position: relative; 
+    text-align: justify;
   }
   
-  .support-image {
+.support-image {
   width: 300px;
   height: 300px;
   background-image: url('/public/assets/images/TheFutureLeadersGrant/HowYouCanHelp.jpg');
@@ -243,29 +246,33 @@
   padding-right: 330px;
 }
   
-  .support-text p, .support-text ul {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 15px;
-  }
-  
-  .support-text ul {
-    padding-left: 20px;
-  }
-  
-  .support-text li {
-    margin-bottom: 10px;
-  }
-  
-  .the-power-of-diverse-leadership h2 {
-    text-align: center;
-    font-size: 2.5rem;
-  }
-  
-  .testimonials {
-  margin: 60px 0;
-  padding: 0 20px;
+.support-text p, .support-text ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.support-text ul {
+  padding-left: 20px;
+}
+
+.support-text li {
+  margin-bottom: 10px;
+}
+
+.the-power-of-diverse-leadership h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.the-power-of-diverse-leadership {
+  text-align: justify;
+}
+
+.testimonials {
+margin: 60px 0;
+padding: 0 20px;
 }
 
 .quote {
@@ -306,5 +313,97 @@
 .quote-left {
   text-align: left;
   margin-right: auto;
+}
+
+@media (max-width: 1024px) {
+  .hero-content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-text-container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-text {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .about-image {
+    width: 100%;
+    height: 400px;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-text h2 {
+    text-align: center;
+  }
+
+  .support-content {
+    flex-direction: column;
+  }
+
+  .support-image {
+    position: static;
+    width: 100%;
+    height: 300px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    transform: none;
+  }
+
+  .support-text {
+    padding-right: 0;
+  }
+
+  .the-power-of-diverse-leadership {
+    margin: 60px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grants-page {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .hero-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .about-text p, .support-text p, .support-text ul, .the-power-of-diverse-leadership p {
+    font-size: 1rem;
+  }
+
+  .quote {
+    max-width: 100%;
+  }
+
+  .quote-right, .quote-left {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
 }
   </style>
