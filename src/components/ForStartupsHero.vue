@@ -18,7 +18,7 @@
   padding: 0px 20px;
   height: 50vh;
   color: white;
-  background: black;
+  background: #141726;
 } 
 
 .custom-hero-section .page-title {

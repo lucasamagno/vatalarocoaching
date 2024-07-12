@@ -19,7 +19,7 @@
   padding: 0 20px; /* Adjusted padding for a slightly smaller height */
   height: 50vh; /* Matching the height of the example */
   color: white; /* Updated text color */
-  background: black; /* Added background color */
+  background: #141726; /* Added background color */
 }
 
 .custom-hero-section .page-title {

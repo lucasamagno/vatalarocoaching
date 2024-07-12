@@ -18,7 +18,7 @@
   padding: 0 60px; /* This controls the space on the left and right */
   height: 50vh;
   color: white;
-  background: black;
+  background: #141726;
 }
 
 
