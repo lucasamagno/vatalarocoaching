@@ -24,7 +24,7 @@
             <h2>About The Grant</h2>
             <p>At Vatalaro Coaching, we are committed to diversifying the leadership landscape by equipping professionals from underrepresented backgrounds with professional support and essential guidance.</p>
             <p>Our cornerstone program, the Future Leaders Grant, provides low or no-cost personalized 1:1 leadership development coaching to professionals from traditionally marginalized backgrounds, for at least six months. Six months of sustained focus has shown to be critical in achieving lasting behavioral change and significant professional growth, ensuring participants can fully integrate and apply new skills to drive meaningful progress in their careers.</p>
-            <p>This initiative not only offers subsidized coaching to empower participants to advance their leadership skills, but it also aims to create ripple effects that benefit entire communities and future generations.</p>
+            <p>This initiative not only offers subsidized coaching to empower participants to advance their leadership skills, but it also aims to create ripple effects that benefit entire communities and future generations. Our coaches are passionate JEDI (justice, equity, diversity, inclusion) advocates with a deep understanding of the unique challenges faced by underrepresented professionals. Each coach is hand-selected and undergoes additional advanced DEIB (Diversity, Equity, Inclusion, and Belonging) training to ensure they can offer empathetic and deeply resonant support to individuals from a wide range of experiences.</p>
             <p>Each coach is hand-selected and undergoes advanced DEIB (Diversity, Equity, Inclusion, and Belonging) training. Our coaches are passionate DEI advocates with a deep understanding of the unique challenges faced by underrepresented professionals. They bring empathy, cultural awareness, and a commitment to fostering an inclusive environment. With a proven track record of guiding individuals as they advance from entry-level jobs to expert-level careers, overcome imposter syndrome, and navigate complex cultural nuances, our esteemed coaches are particularly well-suited to support and empower our grant winners.</p>
             <p>By equipping underrepresented professionals with the tools to lead, we are not just changing the boardrooms; we are building better businesses and cultivating leaders who drive change and inspire others.</p>
             <p id="applying-text"><strong>💡 Interested in applying?</strong> We will be opening applications for the Future Leaders Grant in the fall. If you identify as a woman, transgender, non-binary, or a person of color, and do not have access to professional development stipends or support, we encourage you to check back in September for more information and to apply.</p>
@@ -60,8 +60,8 @@
         <h2>The Power Of Diverse Leadership</h2>
         <p>Investing in diverse leadership is crucial for building a more equitable and inclusive society:</p>
         <ul>
-          <li>Only 4.8% of Fortune 500 CEOs are women, and just three are women of color.</li>
-          <li>People of color make up only 36% of the U.S. workforce but hold just 16% of executive positions.</li>
+          <li>Only 4.8% of Fortune 500 CEOs are women, and just 3% are women of color.</li>
+          <li>People of color make up 36% of the U.S. workforce, but hold only 16% of executive positions.</li>
           <li>Companies with diverse leadership are more innovative and financially successful, with a 33% higher likelihood of outperforming their peers.</li>
         </ul>
         <p>By addressing these disparities, the Future Leaders Grant aims to create a leadership landscape that truly reflects the diversity of our society.</p>
