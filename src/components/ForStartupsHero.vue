@@ -5,7 +5,6 @@
 </template>
 
 <script setup>
-// No additional script setup needed for this example
 </script>
 
 <style scoped>
