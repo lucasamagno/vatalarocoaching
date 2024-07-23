@@ -8,7 +8,9 @@
               <h3>Building a More Diverse Leadership Landscape</h3>
             </div>
           </div>
-          <div class="hero-image"></div>
+          <div class="hero-image-container">
+            <img src="../assets/AboutTheGrant.jpg" alt="Future Leaders Grant" class="hero-image">
+          </div>
         </div>
       </section>
       <div class="cta-container">
@@ -118,24 +120,25 @@
   
   .hero-content {
     display: flex;
-    height: 400px;
-    position: relative;
-    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 600px;
   }
   
   .hero-text-container {
-    flex: 1;
+    flex: 0 1 500px;
+    height: 500px;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    height: 100%;
+    flex-direction: column;
+    justify-content: center;
   }
   
   .hero-text {
     background-color: #141726;
     color: white;
-    padding: 30px;
-    width: 60%;
+    padding: 40px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -144,22 +147,28 @@
   
   .hero-text h2 {
     font-size: 2.5rem;
-    margin: 0;
+    margin: 0 0 20px 0;
   }
   
   .hero-text h3 {
     font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .hero-image-container {
+    flex: 0 1 400px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
   }
   
   .hero-image {
-  flex: 1;
-  background-image: url('/public/assets/images/TheFutureLeadersGrant/AboutTheGrant.jpg');
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: contain;
-  height: 100%;
-  position: relative;
-}
+    width: 85%;
+    height: 100%;
+    object-fit: contain;
+    max-height: none;
+  }
   
   .cta-container {
     display: flex;
@@ -234,203 +243,256 @@
     text-align: justify;
   }
   
-.support-image {
-  width: 300px;
-  height: 300px;
-  background-image: url('/public/assets/images/TheFutureLeadersGrant/HowYouCanHelp.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-left: 30px;
-  position: absolute; 
-  right: 0; 
-  top: 50%;
-  transform: translateY(-50%); 
-}
-  
-.support-text {
-  flex: 1;
-  padding-right: 330px;
-}
-  
-.support-text p, .support-text ul {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.support-text ul {
-  padding-left: 20px;
-}
-
-.support-text li {
-  margin-bottom: 10px;
-}
-
-.the-power-of-diverse-leadership h2 {
-  text-align: center;
-  font-size: 2.5rem;
-}
-
-.the-power-of-diverse-leadership {
-  text-align: justify;
-}
-
-.testimonials {
-margin: 60px 0;
-padding: 0 20px;
-}
-
-.quote {
-  margin: 30px 0;
-  font-style: italic;
-  color: #666;
-  max-width: 80%;
-}
-
-.quote p:first-child {
-  font-weight: bold;
-  font-style: normal;
-  color: #141726;
-  margin-bottom: 5px;
-}
-
-.quote p:last-child {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  position: relative;
-  padding-left: 20px;
-}
-
-.quote p:last-child::before {
-  content: '"';
-  font-size: 2rem;
-  position: absolute;
-  left: 0;
-  top: -10px;
-  color: #da7b27;
-}
-
-.quote-right {
-  text-align: right;
-  margin-left: auto;
-}
-
-.quote-left {
-  text-align: left;
-  margin-right: auto;
-}
-
-#applying-text {
-  font-size: 20px;
-}
-
-#DonateToday {
-  margin-bottom: 40px;
-}
-
-.image-credits {
-  font-size: 0.5rem;
-  color: #aaa;
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 20px;
-}
-
-@media (max-width: 1024px) {
-  .hero-content {
-    flex-direction: column;
-    height: auto;
+  .support-image {
+    width: 300px;
+    height: 300px;
+    background-image: url('/public/assets/images/TheFutureLeadersGrant/HowYouCanHelp.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 30px;
+    position: absolute; 
+    right: 0; 
+    top: 50%;
+    transform: translateY(-50%); 
   }
+  
+  .support-text {
+    flex: 1;
+    padding-right: 330px;
+  }
+  
+  .support-text p, .support-text ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .support-text ul {
+    padding-left: 20px;
+  }
+  
+  .support-text li {
+    margin-bottom: 10px;
+  }
+  
+  .the-power-of-diverse-leadership h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  .the-power-of-diverse-leadership {
+    text-align: justify;
+  }
+  
+  .testimonials {
+    margin: 60px 0;
+    padding: 0 20px;
+  }
+  
+  .quote {
+    margin: 30px 0;
+    font-style: italic;
+    color: #666;
+    max-width: 80%;
+  }
+  
+  .quote p:first-child {
+    font-weight: bold;
+    font-style: normal;
+    color: #141726;
+    margin-bottom: 5px;
+  }
+  
+  .quote p:last-child {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .quote p:last-child::before {
+    content: '"';
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    color: #da7b27;
+  }
+  
+  .quote-right {
+    text-align: right;
+    margin-left: auto;
+  }
+  
+  .quote-left {
+    text-align: left;
+    margin-right: auto;
+  }
+  
+  #applying-text {
+    font-size: 20px;
+  }
+  
+  #DonateToday {
+    margin-bottom: 40px;
+  }
+  
+  .image-credits {
+    font-size: 0.5rem;
+    color: #aaa;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 1024px) {
+    .hero-content {
+      flex-direction: column;
+      min-height: auto;
+      padding: 20px;
+    }
+  
+    .hero-text-container,
+    .hero-image-container {
+      width: 100%;
+      height: auto;
+      flex-basis: auto;
+    }
+  
+    .hero-text {
+      padding: 30px;
+    }
 
-  .hero-text-container {
-    width: 100%;
+  .hero-image-container {
     justify-content: center;
+    margin-top: 20px;
   }
+  
+  .hero-image {
+    width: 70%;
+    max-height: 300px;
+    object-fit: contain;
+  }
+  
+    .about-image {
+      width: 100%;
+      height: 400px;
+      float: none;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .about-text h2 {
+      text-align: center;
+    }
+  
+    .support-content {
+      flex-direction: column;
+    }
+  
+    .support-image {
+      position: static;
+      width: 100%;
+      height: 300px;
+      margin-left: 0;
+      margin-bottom: 20px;
+      transform: none;
+    }
+  
+    .support-text {
+      padding-right: 0;
+    }
+  
+    .the-power-of-diverse-leadership {
+      margin: 60px 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .grants-page {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  
+    .hero {
+      padding: 30px 0;
+    }
 
-  .hero-text {
-    width: 100%;
-    height: auto;
-    padding: 30px;
+    .hero-content {
+    padding: 10px;
   }
 
   .hero-image {
-    width: 100%;
-    height: 300px;
-    background-position: center;
-    background-size: cover;
+    width: 90%;
+    max-height: 250px;
+  }
+  
+    .hero-text h2 {
+      font-size: 2rem;
+    }
+  
+    .hero-text h3 {
+      font-size: 1.2rem;
+    }
+  
+    .image-credits {
+      font-size: 0.4rem;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  
+    .about-text p, .support-text p, .support-text ul, .the-power-of-diverse-leadership p {
+      font-size: 1rem;
+    }
+  
+    .quote {
+      max-width: 100%;
+    }
+  
+    .quote-right, .quote-left {
+      margin-left: 0;
+      margin-right: 0;
+      text-align: left;
+    }
   }
 
-  .about-image {
-    width: 100%;
-    height: 400px;
-    float: none;
-    margin-right: 0;
-    margin-bottom: 20px;
+  @media (min-width: 768px) and (max-width: 1024px) {
+  .hero-content {
+    min-height: 800px;
+    padding: 20px;
   }
 
-  .about-text h2 {
-    text-align: center;
+  .hero-text-container,
+  .hero-image-container {
+    width: 90%; 
+    max-width: 700px; 
+    margin: 0 auto; 
   }
 
-  .support-content {
-    flex-direction: column;
+  .hero-text-container {
+    height: auto;
+    min-height: 400px;
   }
 
-  .support-image {
-    position: static;
-    width: 100%;
-    height: 300px;
-    margin-left: 0;
-    margin-bottom: 20px;
-    transform: none;
+  .hero-text {
+    padding: 100px 40px;
   }
 
-  .support-text {
-    padding-right: 0;
+  .hero-image-container {
+    height: auto;
+    min-height: 400px;
+    margin-top: 30px;
   }
 
-  .the-power-of-diverse-leadership {
-    margin: 60px 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .grants-page {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .image-credits {
-    font-size: 0.4rem;
-  }
-
-  .hero-text h2 {
-    font-size: 2rem;
-  }
-
-  .hero-text h3 {
-    font-size: 1.2rem;
-  }
-
-  .cta-button {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
-
-  .about-text p, .support-text p, .support-text ul, .the-power-of-diverse-leadership p {
-    font-size: 1rem;
-  }
-
-  .quote {
-    max-width: 100%;
-  }
-
-  .quote-right, .quote-left {
-    margin-left: 0;
-    margin-right: 0;
-    text-align: left;
+  .hero-image {
+    width: 100%; 
+    max-height: 400px;
+    object-fit: contain;
   }
 }
   </style>
