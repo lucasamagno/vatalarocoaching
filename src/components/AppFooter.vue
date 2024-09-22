@@ -36,7 +36,7 @@
 }
 
 .footer-links {
-  margin-bottom: 20px; /* Add some space above footer info */
+  margin-bottom: 20px;
   font-family: 'Lato', sans-serif;
   font-size: 14px;
 }
@@ -44,11 +44,11 @@
 .footer-link {
   text-decoration: none;
   color: #333;
-  margin: 0 5px; /* Adjust spacing between links */
+  margin: 0 5px;
 }
 
 .footer-link:hover {
-  text-decoration: underline; /* Optional: underline on hover for better visibility */
+  text-decoration: underline; 
 }
 
 .footer-info {

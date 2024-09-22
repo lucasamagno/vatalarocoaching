@@ -25,19 +25,19 @@
 
 .contact-button {
   display: inline-block;
-  padding: 10px 20px; /* Matching padding */
-  font-size: 1rem; /* Matching font size */
-  font-weight: bold; /* Ensure text is bold */
-  text-decoration: none; /* Remove underline */
-  color: #FFF; /* White text color */
-  background-color: #141726; /* Matching background color */
+  padding: 10px 20px;
+  font-size: 1rem; 
+  font-weight: bold; 
+  text-decoration: none; 
+  color: #FFF; 
+  background-color: #141726; 
   border: none;
-  border-radius: 25px; /* Rounded corners */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  border-radius: 25px; 
+  transition: background-color 0.3s ease;
 }
 
 .contact-button:hover {
-  background-color: #2b3152; /* Darker background color on hover */
+  background-color: #2b3152; 
 }
 
 @media (max-width: 430px) {

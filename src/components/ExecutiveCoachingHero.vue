@@ -5,7 +5,6 @@
 </template>
 
 <script setup>
-// No additional script setup needed for this example
 </script>
 
 <style scoped>
@@ -15,7 +14,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 60px; /* This controls the space on the left and right */
+  padding: 0 60px; 
   height: 50vh;
   color: white;
   background: #141726;
@@ -23,16 +22,15 @@
 
 
 .custom-hero-section .page-title {
-  margin-bottom: 15px; /* Adjusted spacing */
-  font-size: 2.5rem; /* Adjusted font size for the title */
-  color: inherit; /* Inherits the section's text color */
-  font-family: "Lato" /* Ensuring font family consistency */
+  margin-bottom: 15px; 
+  font-size: 2.5rem;
+  color: inherit; 
+  font-family: "Lato" 
 }
 
-/* Adjustments for Galaxy Fold and similarly small devices */
 @media (max-width: 375px) {
   .custom-hero-section .page-title {
-    font-size: 1.8rem; /* Smaller font size for the title */
+    font-size: 1.8rem; 
   }
 }
 </style>

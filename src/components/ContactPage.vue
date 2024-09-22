@@ -1,6 +1,5 @@
 <template>
   <div class="asana-embed-container">
-    <!-- New content added above the form -->
     <div class="transformative-journey-intro">
       <h3>Begin your transformative journey today.</h3>
     </div>
@@ -16,14 +15,13 @@
 </template>
 
 <script setup>
-// Script setup remains unchanged
 </script>
 
 <style scoped>
 .responsive-iframe-container {
   position: relative;
   width: 100%;
-  padding-top: 180%; /* Adjusted to accommodate the form's height */
+  padding-top: 180%;
 }
 .asana-embed-iframe {
   position: absolute;
@@ -33,14 +31,14 @@
   height: 100%;
 }
 .asana-embed-container {
-  max-width: 820px; /* Adjust the max-width as needed */
-  margin: auto; /* Center the form container */
+  max-width: 820px; 
+  margin: auto; 
 }
 .transformative-journey-intro {
-  margin-bottom: 20px; /* Space between the intro text and the form */
+  margin-bottom: 20px; 
 }
 .transformative-journey-intro h3 {
-  margin-bottom: 10px; /* Space between the title and the description */
+  margin-bottom: 10px; 
   text-align: center;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <section class="experience-section">
-    <h3 class="experience-header">Experience</h3> <!-- Header added here -->
+    <h3 class="experience-header">Experience</h3> 
     <div class="companies">
       <div class="company-logo" v-for="logo in logos" :key="logo.name">
         <img :src="logo.imgSrc" :alt="logo.name" />
@@ -22,16 +22,16 @@ const logos = [
 .experience-section {
   display: flex;
   justify-content: center;
-  flex-direction: column; /* Changed to column for vertical stacking */
-  align-items: center; /* Ensure the header is centered */
+  flex-direction: column; 
+  align-items: center; 
   flex-wrap: wrap;
   padding: 20px;
 }
 
 .experience-header {
-  margin-bottom: 20px; /* Spacing between the header and the logos */
-  font-size: 24px; /* Adjust font size as needed */
-  text-align: center; /* Center the text */
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center; 
 }
 
 .companies {

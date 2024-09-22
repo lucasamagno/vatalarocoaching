@@ -22,7 +22,6 @@
 export default {
   methods: {
     getImagePath(imageFileName) {
-      // Check if running on GitHub Pages and adjust the path accordingly
       const basePath = window.location.hostname.includes('github.io') ? '/vatalarocoaching/' : '/';
       return `${basePath}assets/images/${imageFileName}`;
     }
@@ -42,20 +41,20 @@ export default {
 .text-container {
   text-align: justify;
   padding: 20px;
-  overflow: hidden; /* Ensures the container wraps around floated elements */
+  overflow: hidden;
 }
 
 .float-left {
   float: left;
-  width: 30%; /* Adjust based on your preference */
+  width: 30%; 
   height: auto;
-  margin-right: 20px; /* For float-left */
+  margin-right: 20px; 
 }
 
 .image-center {
-  display: block; /* Needed to apply margin auto for centering */
-  margin: 20px auto; /* Top and bottom margins for spacing, auto for left and right margins to center */
-  width: 30%; /* Adjust based on your preference */
+  display: block;
+  margin: 20px auto; 
+  width: 30%;
   height: auto;
 }
 
@@ -68,13 +67,13 @@ export default {
 @media (max-width: 768px) {
   .float-left, .image-center {
     float: none;
-    margin: 10px auto; /* Center images on smaller screens */
+    margin: 10px auto; 
     display: block;
-    width: 80%; /* Adjust for mobile, ensuring images are not too large */
+    width: 80%; 
   }
 
   .text-container {
-    padding: 10px; /* Adjust padding for smaller screens */
+    padding: 10px; 
   }
 }
 </style>

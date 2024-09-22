@@ -14,90 +14,89 @@
 <style scoped>
 .hero-section {
   display: flex;
-  flex-direction: row; /* Align side by side for desktop and tablets */
+  flex-direction: row; 
   align-items: center;
   justify-content: center;
   padding: 0 20px;
-  margin-top: 50px; /* Added margin at the top */
-  margin-bottom: 50px; /* Added margin at the bottom */
+  margin-top: 50px; 
+  margin-bottom: 50px; 
   background-color: #FFFFFF;
 }
 
 .hero-left, .hero-right {
-  flex: 1; /* Split the space evenly between the image and the content */
+  flex: 1;
 }
 
 .hero-left {
-  min-height: 500px; /* Increased height for better display */
+  min-height: 500px;
   background-image: url('/public/assets/images/IMG_1455.jpg');
-  background-size: contain; /* Change to 'contain' to ensure the full image is visible */
+  background-size: contain; 
   background-repeat: no-repeat;
-  background-position: center; /* Center the image */
+  background-position: center; 
 }
 
 .hero-right {
-  text-align: left; /* Left-align text for desktop and tablet */
-  padding: 20px; /* Add some padding around the text */
+  text-align: left; 
+  padding: 20px; 
 }
 
 .hero-right h1, .hero-right p, .button-container {
-  margin: 0 0 20px; /* Add bottom margin for spacing */
+  margin: 0 0 20px; 
 }
 
 .contact-button {
-  display: inline-block; /* Ensures button can grow in height */
-  padding: 10px 20px; /* Button padding */
-  background-color: #141726; /* Button color */
-  color: #FFF; /* Text color */
-  text-decoration: none; /* No underline */
-  border-radius: 25px; /* Rounded corners */
-  transition: background-color 0.3s ease; /* Smooth transition for hover */
-  white-space: normal; /* Allows text to wrap */
-  text-align: center; /* Centers the text inside the button */
-  min-width: 220px; /* Minimum width to prevent too narrow buttons */
-  box-sizing: border-box; /* Ensures padding is included in width calculation */
+  display: inline-block;
+  padding: 10px 20px; 
+  background-color: #141726; 
+  color: #FFF; 
+  text-decoration: none;
+  border-radius: 25px; 
+  transition: background-color 0.3s ease; 
+  white-space: normal; 
+  text-align: center; 
+  min-width: 220px; 
+  box-sizing: border-box; 
 }
 
 .contact-button:hover {
-  background-color: #2b3152; /* Darker color on hover */
+  background-color: #2b3152;
 }
 
-/* Tablet layout (similar to desktop) */
 @media (max-width: 1024px) {
   .hero-section {
-    flex-direction: row; /* Maintain side-by-side layout on tablets */
+    flex-direction: row; 
   }
 }
 
-/* Mobile layout */
+
 @media (max-width: 767px) {
   .hero-section {
-    flex-direction: column; /* Stack elements vertically on mobile */
-    margin-top: 20px; /* Adjusted margin for mobile */
-    margin-bottom: 20px; /* Adjusted margin for mobile */
+    flex-direction: column; 
+    margin-top: 20px;
+    margin-bottom: 20px; 
   }
 
   .hero-left {
-    width: 100%; /* Full width for the image */
-    order: -1; /* Ensure image is above the text */
-    min-height: 400px; /* Increased height for a larger display on mobile */
-    background-size: cover; /* Keep to 'cover' for mobile to fill the container */
-    background-position: center; /* Center the image to focus on the main part */
-    margin-top: 20px; /* Added top margin for spacing between navbar and image */
+    width: 100%; 
+    order: -1; 
+    min-height: 400px; 
+    background-size: cover; 
+    background-position: center;
+    margin-top: 20px; 
   }
 
   .hero-right {
-    text-align: center; /* Center-align text for mobile */
-    padding: 20px; /* Ensure there's padding around the text for readability */
+    text-align: center; 
+    padding: 20px;
   }
 
   .hero-right h1, .hero-right p, .button-container {
-    margin: 20px 0; /* Adjust spacing for mobile layout */
+    margin: 20px 0; 
   }
 
   .contact-button {
-    width: auto; /* Allows button to expand based on content size */
-    padding: 15px 20px; /* Slightly larger padding for better touch target */
+    width: auto; 
+    padding: 15px 20px; 
   }
 }
 </style>

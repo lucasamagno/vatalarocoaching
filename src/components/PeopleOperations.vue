@@ -80,10 +80,6 @@ const areas = ref([
   margin-bottom: 20px;
 }
 
-.gradient-shape, .people-operations-content, .first-principles-leadership {
-  /* Styles unchanged */
-}
-
 .areas-of-help .areas-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -103,45 +99,40 @@ const areas = ref([
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-/* Set all <p> elements within .people-operations-container to display as block */
 .people-operations-container p {
   display: block;
-  text-align: justify; /* Set text alignment to justify */
-  margin: 0 auto; /* Center the block text */
-  line-height: 1.6; /* Add space between lines */
+  text-align: justify;
+  margin: 0 auto;
+  line-height: 1.6; 
 }
 
 .area h3 {
   text-align: center;
 }
 
-/* For large screens where we can fit 5 items per row */
 @media (min-width: 1025px) {
   .areas-of-help .areas-grid {
-    grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
-/* For medium screens where we switch to 2 items per row */
 @media (max-width: 1024px) {
   .people-operations-container {
     max-width: 90%;
     padding: 30px;
   }
   .areas-of-help .areas-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Adjustments for smaller screens remain unchanged */
 @media (max-width: 768px) {
-  /* Mobile styles */
   .people-operations-container {
     max-width: 100%;
     padding: 20px;
   }
   .areas-of-help .areas-grid {
-    grid-template-columns: 1fr; /* 1 item per row */
+    grid-template-columns: 1fr;
   }
 }
 </style>

@@ -2,7 +2,6 @@
   <div class="tan-color">
     <div class="workshops-training">
       <h2 class="content-title">Workshops & Training for managers and teams</h2>
-      <!-- Sections -->
       <section>
         <h3>Fostering Inclusivity: A DEIB Training Workshop</h3>
         <p>Delve into the nuanced world of diversity, equity, inclusion, and belonging (DEIB). We’ll explore unconscious bias, allyship, and the importance of inclusive hiring practices. If you have Employee Resource Groups, we can collaborate with them to add a dynamic, engaging, and impactful dimension to this training, showcasing from a personal lens why this work matters.</p>
@@ -19,7 +18,6 @@
         <h3>Putting Conflict to Rest: The Clearing Path from Story to Fact</h3>
         <p>Explore a powerful conscious leadership tool to resolve workplace conflicts, focusing on the distinction between subjective stories and objective facts. This session offers tools for fostering authentic dialogue, enhancing empathy, and achieving lasting resolution.</p>
       </section>
-      <!-- Disclaimer -->
       <p class="disclaimer">It is recommended that these be hosted in person, but many can also be held online.</p>
     </div>
   </div>

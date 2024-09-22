@@ -14,15 +14,15 @@
 
 <style scoped>
 .testimonials-section {
-  width: 100%; /* Span the entire width of the screen */
+  width: 100%; 
   display: flex;
-  justify-content: center; /* Center the content horizontally */
-  padding: 20px 0; /* Top and bottom padding */
+  justify-content: center; 
+  padding: 20px 0; 
 }
 
 .content {
-  width: 60%; /* Content takes up 60% of the component's width */
-  text-align: center; /* Center text content */
-  margin: 0 auto; /* Center the content div horizontally */
+  width: 60%; 
+  text-align: center; 
+  margin: 0 auto; 
 }
 </style>

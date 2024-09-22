@@ -44,13 +44,12 @@
 }
 
 @media (max-width: 1024px) and (min-width: 430px) {
-  /* Tablet view adjustments */
   .new-page-navigation {
-    grid-gap: 10px; /* Reduce space between rows */
+    grid-gap: 10px; 
   }
   
   .new-nav-item {
-    margin-bottom: 10px; /* Adjust space between items if needed */
+    margin-bottom: 10px; 
   }
 
   .new-page-navigation {
@@ -59,7 +58,6 @@
 }
 
 @media (max-width: 430px) {
-  /* Mobile view adjustments */
   .new-page-navigation {
     padding: 10px;
     grid-template-columns: 1fr;

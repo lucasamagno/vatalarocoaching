@@ -67,13 +67,13 @@
 .collaboration-section h3 {
   margin-bottom: 1rem;
   color: #141726;
-  font-size: 20px; /* Adjusted to match h3 size in workshops-training */
-  text-align: center; /* Centered to match the style */
+  font-size: 20px; 
+  text-align: center; 
 }
 
 .collaboration-section p {
   margin-bottom: 1rem;
-  text-align: justify; /* Adjusted for alignment consistency */
+  text-align: justify; 
   line-height: 1.6;
 }
 </style>

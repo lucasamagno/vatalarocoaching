@@ -8,26 +8,26 @@
 <style scoped>
 .diverse-teams {
   border: 2px solid #141726;
-  padding: 20px; /* Padding around the text */
-  text-align: justify; /* Text aligned justifiably */
-  margin: 40px; /* Margin around the component */
-  background-color: #fff; /* Sets a white background */
+  padding: 20px; 
+  text-align: justify; 
+  margin: 40px; 
+  background-color: #fff; 
 }
 
 .content-title {
-  color: #333; /* Dark color for the heading */
-  margin-bottom: 15px; /* Spacing between the title and paragraph */
+  color: #333; 
+  margin-bottom: 15px; 
   text-align: center;
 }
 
 .diverse-teams p {
-  color: #666; /* Lighter color for the paragraph text */
-  line-height: 1.6; /* Improved readability */
+  color: #666; 
+  line-height: 1.6; 
 }
 
 @media (max-width: 768px) {
   .diverse-teams {
-    margin: 20px 10px; /* Reduced margin for smaller screens */
+    margin: 20px 10px; 
   }
 }
 </style>
